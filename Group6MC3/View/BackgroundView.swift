@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class Background: UIView {
+class BackgroundView: UIView {
 
     @IBInspectable var insideColor: UIColor = UIColor.clear
     @IBInspectable var outsideColor: UIColor = UIColor.clear
