@@ -27,19 +27,38 @@ class SettingController: UIViewController {
     }
 
     @IBAction func switchAction(_ sender: UISwitch) {
-        switch sender.isOn{
-        case switchAlcohol.isOn : print("no alcohol");
-        case switchEat.isOn : print("no eat");
-            case switchCaffeine.isOn : print("no caffeine");
-            case switchExercise.isOn : print("no exercise");
-            case switchSugar.isOn : print("no sugar");
-            case switchGadget.isOn : print("no gadget");
-            case switchBed.isOn : print("reminder bed time");
-            case switchEncouragement.isOn : print("");
-            default : print("nothing")
+//            switch sender.isOn{
+//                case switchAlcohol.isOn : print("no alcohol");
+//                case switchEat.isOn : print("no eat");
+//                case switchCaffeine.isOn : print("no caffeine");
+//                case switchExercise.isOn : print("no exercise");
+//                case switchSugar.isOn : print("no sugar");
+//                case switchGadget.isOn : print("no gadget");
+//                case switchBed.isOn : print("reminder bed time");
+//                case switchEncouragement.isOn : print("");
+//                default : print("nothing")
+//            }
+        if(switchAlcohol.isOn){
+            print("no alcohol")
+        }
+        else{
+            print("nothing")
+        }
+        
+        if(switchEat.isOn){
+            print("no eat")
+        }
+        else{
+            print("nothing")
+        }
+        
+        if(switchCaffeine.isOn){
+            print("no caffeine")
+        }
+        else{
+            print("nothing")
         }
     }
     
- 
 }
 
