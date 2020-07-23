@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE6A915824C919A20097A9AF /* TabNav.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915724C919A20097A9AF /* TabNav.storyboard */; };
+		AE6A915A24C923260097A9AF /* Clock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915924C923260097A9AF /* Clock.storyboard */; };
+		AE6A915C24C9234B0097A9AF /* Light.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915B24C9234B0097A9AF /* Light.storyboard */; };
+		AE6A915E24C9235A0097A9AF /* Statistic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915D24C9235A0097A9AF /* Statistic.storyboard */; };
+		AE6A916024C923AF0097A9AF /* Sound.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915F24C923AF0097A9AF /* Sound.storyboard */; };
 		AEAAB69024C68EB200A47532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAB68F24C68EB200A47532 /* AppDelegate.swift */; };
 		AEAAB69224C68EB200A47532 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAB69124C68EB200A47532 /* SceneDelegate.swift */; };
 		AEAAB69424C68EB200A47532 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAB69324C68EB200A47532 /* SettingController.swift */; };
@@ -18,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE6A915724C919A20097A9AF /* TabNav.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabNav.storyboard; sourceTree = "<group>"; };
+		AE6A915924C923260097A9AF /* Clock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Clock.storyboard; sourceTree = "<group>"; };
+		AE6A915B24C9234B0097A9AF /* Light.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Light.storyboard; sourceTree = "<group>"; };
+		AE6A915D24C9235A0097A9AF /* Statistic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Statistic.storyboard; sourceTree = "<group>"; };
+		AE6A915F24C923AF0097A9AF /* Sound.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sound.storyboard; sourceTree = "<group>"; };
 		AEAAB68C24C68EB200A47532 /* Group6MC3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group6MC3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEAAB68F24C68EB200A47532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEAAB69124C68EB200A47532 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,8 +85,13 @@
 		AEAAB6B324C6A9FB00A47532 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AEAAB69524C68EB200A47532 /* Setting.storyboard */,
+				AE6A915724C919A20097A9AF /* TabNav.storyboard */,
 				AEAAB6B524C6AAC900A47532 /* BackgroundView.swift */,
+				AE6A915924C923260097A9AF /* Clock.storyboard */,
+				AE6A915B24C9234B0097A9AF /* Light.storyboard */,
+				AE6A915D24C9235A0097A9AF /* Statistic.storyboard */,
+				AE6A915F24C923AF0097A9AF /* Sound.storyboard */,
+				AEAAB69524C68EB200A47532 /* Setting.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -147,9 +162,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6A916024C923AF0097A9AF /* Sound.storyboard in Resources */,
+				AE6A915824C919A20097A9AF /* TabNav.storyboard in Resources */,
 				AEAAB69F24C68EB400A47532 /* LaunchScreen.storyboard in Resources */,
 				AEAAB69C24C68EB400A47532 /* Assets.xcassets in Resources */,
+				AE6A915C24C9234B0097A9AF /* Light.storyboard in Resources */,
 				AEAAB69724C68EB200A47532 /* Setting.storyboard in Resources */,
+				AE6A915A24C923260097A9AF /* Clock.storyboard in Resources */,
+				AE6A915E24C9235A0097A9AF /* Statistic.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

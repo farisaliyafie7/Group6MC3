@@ -20,44 +20,61 @@ class SettingController: UIViewController {
     @IBOutlet weak var switchBed: UISwitch!
     @IBOutlet weak var switchEncouragement: UISwitch!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
     @IBAction func switchAction(_ sender: UISwitch) {
-//            switch sender.isOn{
-//                case switchAlcohol.isOn : print("no alcohol");
-//                case switchEat.isOn : print("no eat");
-//                case switchCaffeine.isOn : print("no caffeine");
-//                case switchExercise.isOn : print("no exercise");
-//                case switchSugar.isOn : print("no sugar");
-//                case switchGadget.isOn : print("no gadget");
-//                case switchBed.isOn : print("reminder bed time");
-//                case switchEncouragement.isOn : print("");
-//                default : print("nothing")
-//            }
         if(switchAlcohol.isOn){
             print("no alcohol")
-        }
-        else{
+        }else{
             print("nothing")
         }
-        
         if(switchEat.isOn){
             print("no eat")
-        }
-        else{
+        }else{
             print("nothing")
         }
-        
         if(switchCaffeine.isOn){
             print("no caffeine")
-        }
-        else{
+        }else{
             print("nothing")
         }
+        if(switchExercise.isOn){
+            print("no exercise")
+        }else{
+            print("nothing")
+        }
+        if(switchSugar.isOn){
+            print("no sugar")
+        }else{
+            print("nothing")
+        }
+        if(switchGadget.isOn){
+            print("no gadget")
+        }else{
+            print("nothing")
+        }
+        if(switchBed.isOn){
+            print("reminder for bed time")
+        }else{
+            print("nothing")
+        }
+        if(switchEncouragement.isOn){
+            print("For better life")
+        }else{
+            print("nothing")
+        }
+    }
+    
+    @IBAction func soundSetting(_ sender: UITapGestureRecognizer) {
+    }
+    
+    @IBAction func repeatSetting(_ sender: UITapGestureRecognizer) {
+    }
+    
+    @IBAction func typeSetting(_ sender: UITapGestureRecognizer) {
     }
     
 }
