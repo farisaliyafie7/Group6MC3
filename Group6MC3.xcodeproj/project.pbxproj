@@ -12,6 +12,7 @@
 		AE6A915C24C9234B0097A9AF /* Light.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915B24C9234B0097A9AF /* Light.storyboard */; };
 		AE6A915E24C9235A0097A9AF /* Statistic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915D24C9235A0097A9AF /* Statistic.storyboard */; };
 		AE6A916024C923AF0097A9AF /* Sound.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915F24C923AF0097A9AF /* Sound.storyboard */; };
+		AE6A916824C9388C0097A9AF /* ReminderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6A916724C9388C0097A9AF /* ReminderController.swift */; };
 		AEAAB69024C68EB200A47532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAB68F24C68EB200A47532 /* AppDelegate.swift */; };
 		AEAAB69224C68EB200A47532 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAB69124C68EB200A47532 /* SceneDelegate.swift */; };
 		AEAAB69424C68EB200A47532 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAB69324C68EB200A47532 /* SettingController.swift */; };
@@ -28,6 +29,7 @@
 		AE6A915B24C9234B0097A9AF /* Light.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Light.storyboard; sourceTree = "<group>"; };
 		AE6A915D24C9235A0097A9AF /* Statistic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Statistic.storyboard; sourceTree = "<group>"; };
 		AE6A915F24C923AF0097A9AF /* Sound.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sound.storyboard; sourceTree = "<group>"; };
+		AE6A916724C9388C0097A9AF /* ReminderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReminderController.swift; path = ../../ReminderController.swift; sourceTree = "<group>"; };
 		AEAAB68C24C68EB200A47532 /* Group6MC3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group6MC3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEAAB68F24C68EB200A47532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEAAB69124C68EB200A47532 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,12 +88,12 @@
 			isa = PBXGroup;
 			children = (
 				AE6A915724C919A20097A9AF /* TabNav.storyboard */,
-				AEAAB6B524C6AAC900A47532 /* BackgroundView.swift */,
 				AE6A915924C923260097A9AF /* Clock.storyboard */,
 				AE6A915B24C9234B0097A9AF /* Light.storyboard */,
 				AE6A915D24C9235A0097A9AF /* Statistic.storyboard */,
 				AE6A915F24C923AF0097A9AF /* Sound.storyboard */,
 				AEAAB69524C68EB200A47532 /* Setting.storyboard */,
+				AEAAB6B524C6AAC900A47532 /* BackgroundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +101,7 @@
 		AEAAB6B424C6AA1400A47532 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AE6A916724C9388C0097A9AF /* ReminderController.swift */,
 				AEAAB69324C68EB200A47532 /* SettingController.swift */,
 			);
 			path = Controller;
@@ -185,6 +188,7 @@
 				AEAAB69024C68EB200A47532 /* AppDelegate.swift in Sources */,
 				AEAAB69224C68EB200A47532 /* SceneDelegate.swift in Sources */,
 				AEAAB6B624C6AAC900A47532 /* BackgroundView.swift in Sources */,
+				AE6A916824C9388C0097A9AF /* ReminderController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
