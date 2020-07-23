@@ -30,50 +30,59 @@ class SettingController: UIViewController {
     // Start : All Switch Actions
     @IBAction func alcoholSwitched(_ sender: UISwitch) {
         if(switchAlcohol.isOn){
-            print("no alcohol")
             reminder.avoidAlcoholReminder()
+        }else{
+            reminder.cancelAlcoholReminder()
         }
     }
     @IBAction func eatSwitched(_ sender: UISwitch) {
         if(switchEat.isOn){
-            print("no eat")
             reminder.avoidEatReminder()
+        }else{
+            reminder.cancelEatReminder()
         }
     }
     @IBAction func caffeineSwitched(_ sender: UISwitch) {
         if(switchCaffeine.isOn){
-            print("no caffeine")
             reminder.avoidFaffeineReminder()
+        }else{
+            reminder.cancelCaffeineReminder()
         }
     }
     @IBAction func exerciseSwitched(_ sender: UISwitch) {
         if(switchExercise.isOn){
-            print("no exercise")
             reminder.avoidExerciseReminder()
+        }else{
+            reminder.cancelExerciseReminder()
         }
     }
     @IBAction func sugarSwitched(_ sender: UISwitch) {
         if(switchSugar.isOn){
-            print("no sugar")
             reminder.avoidSugarReminder()
+        }else{
+            reminder.cancelSugarReminder()
         }
     }
     @IBAction func gadgetSwitched(_ sender: UISwitch) {
         if(switchGadget.isOn){
             print("no gadget")
             reminder.avoidGadgetReminder()
+        }else{
+            reminder.cancelGadgetReminder()
         }
     }
     @IBAction func bedSwitched(_ sender: UISwitch) {
         if(switchBed.isOn){
-            print("reminder for bed time")
             reminder.bedTimeReminder()
+        }else{
+            reminder.cancelBedReminder()
         }
     }
     @IBAction func encouragementSwitched(_ sender: UISwitch) {
         if(switchEncouragement.isOn){
-            print("For better life")
             reminder.encouragementReminder()
+        }else{
+            reminder.cancelEncouragementReminder()
         }
     }
     // End: All Switch Actions
