@@ -65,7 +65,6 @@ class SettingController: UIViewController {
     }
     @IBAction func gadgetSwitched(_ sender: UISwitch) {
         if(switchGadget.isOn){
-            print("no gadget")
             reminder.avoidGadgetReminder()
         }else{
             reminder.cancelGadgetReminder()
@@ -87,14 +86,16 @@ class SettingController: UIViewController {
     }
     // End: All Switch Actions
     
+    // Start: All Alarm Tap Gesture Action
     @IBAction func soundSetting(_ sender: UITapGestureRecognizer) {
+        
     }
-    
     @IBAction func repeatSetting(_ sender: UITapGestureRecognizer) {
+        
     }
-    
     @IBAction func typeSetting(_ sender: UITapGestureRecognizer) {
+        
     }
-    
+    // End: All Alarm Tap Gesture Action
 }
 

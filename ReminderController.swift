@@ -9,7 +9,6 @@ import UserNotifications
 
 // This class has function to give user notifications
 class ReminderController{
-
     // 1. Ask for permission
     let center = UNUserNotificationCenter.current()
     // 2. Create the notification content
@@ -34,6 +33,7 @@ class ReminderController{
         let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: Date().addingTimeInterval(10))
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
         let request = UNNotificationRequest(identifier: uuidReminder["alcohol"]!, content: content, trigger: trigger)
+        // 5. Register to notification center
         center.add(request) { (error) in
             //Check the parameter and handle any errors
             }
