@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingController: UIViewController {
+class SettingVC: UIViewController {
     
     @IBOutlet weak var switchAlcohol: UISwitch!
     @IBOutlet weak var switchEat: UISwitch!
