@@ -104,8 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				AEAAB69324C68EB200A47532 /* SettingVC.swift */,
-				AEA6EF4B24C9A75D00FC0FAE /* AlarmController.swift */,
 				AE6A916724C9388C0097A9AF /* ReminderController.swift */,
+				AEA6EF4B24C9A75D00FC0FAE /* AlarmController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
