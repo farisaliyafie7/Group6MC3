@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="45t-AE-hxz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="45t-AE-hxz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,15 +30,15 @@
             </objects>
             <point key="canvasLocation" x="-644" y="-175"/>
         </scene>
-        <!--clock-->
+        <!--Clock -->
         <scene sceneID="jRY-Eu-HhR">
             <objects>
-                <viewControllerPlaceholder storyboardName="Clock" referencedIdentifier="clock" id="Jw8-no-x29" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EIe-54-DuI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Clock" referencedIdentifier="Clock " id="Jw8-no-x29" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Clock" image="clock.fill" catalog="system" id="dix-XA-foL"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EIe-54-DuI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1202" y="303"/>
+            <point key="canvasLocation" x="-1162" y="282"/>
         </scene>
         <!--Light-->
         <scene sceneID="Dmv-mD-HJ8">
@@ -82,10 +82,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chart.bar.fill" catalog="system" width="128" height="89"/>
-        <image name="clock.fill" catalog="system" width="128" height="121"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
-        <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
-        <image name="music.note.list" catalog="system" width="128" height="113"/>
+        <image name="chart.bar.fill" catalog="system" width="64" height="44"/>
+        <image name="clock.fill" catalog="system" width="64" height="60"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
+        <image name="lightbulb.fill" catalog="system" width="56" height="64"/>
+        <image name="music.note.list" catalog="system" width="64" height="56"/>
     </resources>
 </document>
