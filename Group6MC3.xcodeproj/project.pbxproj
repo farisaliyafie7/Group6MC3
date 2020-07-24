@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		05206B1424C93CF6004DCF38 /* setSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05206B1324C93CF6004DCF38 /* setSchedule.storyboard */; };
 		05206B1624C93D08004DCF38 /* setSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05206B1524C93D08004DCF38 /* setSchedule.swift */; };
+		AE51BFDE24CA7EBE006AAFFA /* ClockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE51BFDC24CA7EBE006AAFFA /* ClockVC.swift */; };
+		AE51BFDF24CA7EBE006AAFFA /* LightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE51BFDD24CA7EBE006AAFFA /* LightVC.swift */; };
 		AE6A915824C919A20097A9AF /* TabNav.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915724C919A20097A9AF /* TabNav.storyboard */; };
 		AE6A915A24C923260097A9AF /* Clock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915924C923260097A9AF /* Clock.storyboard */; };
 		AE6A915C24C9234B0097A9AF /* Light.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915B24C9234B0097A9AF /* Light.storyboard */; };
@@ -29,6 +31,8 @@
 /* Begin PBXFileReference section */
 		05206B1324C93CF6004DCF38 /* setSchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = setSchedule.storyboard; sourceTree = "<group>"; };
 		05206B1524C93D08004DCF38 /* setSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setSchedule.swift; sourceTree = "<group>"; };
+		AE51BFDC24CA7EBE006AAFFA /* ClockVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockVC.swift; sourceTree = "<group>"; };
+		AE51BFDD24CA7EBE006AAFFA /* LightVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightVC.swift; sourceTree = "<group>"; };
 		AE6A915724C919A20097A9AF /* TabNav.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabNav.storyboard; sourceTree = "<group>"; };
 		AE6A915924C923260097A9AF /* Clock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Clock.storyboard; sourceTree = "<group>"; };
 		AE6A915B24C9234B0097A9AF /* Light.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Light.storyboard; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 		AEAAB6B424C6AA1400A47532 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AE51BFDC24CA7EBE006AAFFA /* ClockVC.swift */,
+				AE51BFDD24CA7EBE006AAFFA /* LightVC.swift */,
 				AEAAB69324C68EB200A47532 /* SettingVC.swift */,
 				AE6A916724C9388C0097A9AF /* ReminderController.swift */,
 				AEA6EF4B24C9A75D00FC0FAE /* AlarmController.swift */,
@@ -204,7 +210,9 @@
 				AEAAB69A24C68EB200A47532 /* Group6MC3.xcdatamodeld in Sources */,
 				AEAAB69424C68EB200A47532 /* SettingVC.swift in Sources */,
 				AEAAB69024C68EB200A47532 /* AppDelegate.swift in Sources */,
+				AE51BFDF24CA7EBE006AAFFA /* LightVC.swift in Sources */,
 				05206B1624C93D08004DCF38 /* setSchedule.swift in Sources */,
+				AE51BFDE24CA7EBE006AAFFA /* ClockVC.swift in Sources */,
 				AEAAB69224C68EB200A47532 /* SceneDelegate.swift in Sources */,
 				AEAAB6B624C6AAC900A47532 /* BackgroundView.swift in Sources */,
 				AE6A916824C9388C0097A9AF /* ReminderController.swift in Sources */,
