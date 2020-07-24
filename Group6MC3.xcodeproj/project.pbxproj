@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05206B1424C93CF6004DCF38 /* setSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05206B1324C93CF6004DCF38 /* setSchedule.storyboard */; };
+		05206B1624C93D08004DCF38 /* setSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05206B1524C93D08004DCF38 /* setSchedule.swift */; };
 		AE6A915824C919A20097A9AF /* TabNav.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915724C919A20097A9AF /* TabNav.storyboard */; };
 		AE6A915A24C923260097A9AF /* Clock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915924C923260097A9AF /* Clock.storyboard */; };
 		AE6A915C24C9234B0097A9AF /* Light.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915B24C9234B0097A9AF /* Light.storyboard */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05206B1324C93CF6004DCF38 /* setSchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = setSchedule.storyboard; sourceTree = "<group>"; };
+		05206B1524C93D08004DCF38 /* setSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setSchedule.swift; sourceTree = "<group>"; };
 		AE6A915724C919A20097A9AF /* TabNav.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabNav.storyboard; sourceTree = "<group>"; };
 		AE6A915924C923260097A9AF /* Clock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Clock.storyboard; sourceTree = "<group>"; };
 		AE6A915B24C9234B0097A9AF /* Light.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Light.storyboard; sourceTree = "<group>"; };
@@ -55,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05206B1024C93CAC004DCF38 /* setSchedulePage */ = {
+			isa = PBXGroup;
+			children = (
+				05206B1324C93CF6004DCF38 /* setSchedule.storyboard */,
+				05206B1524C93D08004DCF38 /* setSchedule.swift */,
+			);
+			path = setSchedulePage;
+			sourceTree = "<group>";
+		};
 		AEAAB68324C68EB200A47532 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +87,7 @@
 		AEAAB68E24C68EB200A47532 /* Group6MC3 */ = {
 			isa = PBXGroup;
 			children = (
+				05206B1024C93CAC004DCF38 /* setSchedulePage */,
 				AEAAB68F24C68EB200A47532 /* AppDelegate.swift */,
 				AEAAB69124C68EB200A47532 /* SceneDelegate.swift */,
 				AEAAB6B424C6AA1400A47532 /* Controller */,
@@ -174,6 +188,7 @@
 				AEAAB69C24C68EB400A47532 /* Assets.xcassets in Resources */,
 				AE6A915C24C9234B0097A9AF /* Light.storyboard in Resources */,
 				AEAAB69724C68EB200A47532 /* Setting.storyboard in Resources */,
+				05206B1424C93CF6004DCF38 /* setSchedule.storyboard in Resources */,
 				AE6A915A24C923260097A9AF /* Clock.storyboard in Resources */,
 				AE6A915E24C9235A0097A9AF /* Statistic.storyboard in Resources */,
 			);
@@ -189,6 +204,7 @@
 				AEAAB69A24C68EB200A47532 /* Group6MC3.xcdatamodeld in Sources */,
 				AEAAB69424C68EB200A47532 /* SettingVC.swift in Sources */,
 				AEAAB69024C68EB200A47532 /* AppDelegate.swift in Sources */,
+				05206B1624C93D08004DCF38 /* setSchedule.swift in Sources */,
 				AEAAB69224C68EB200A47532 /* SceneDelegate.swift in Sources */,
 				AEAAB6B624C6AAC900A47532 /* BackgroundView.swift in Sources */,
 				AE6A916824C9388C0097A9AF /* ReminderController.swift in Sources */,
@@ -339,6 +355,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LU7959C5GC;
 				INFOPLIST_FILE = Group6MC3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,6 +374,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LU7959C5GC;
 				INFOPLIST_FILE = Group6MC3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
