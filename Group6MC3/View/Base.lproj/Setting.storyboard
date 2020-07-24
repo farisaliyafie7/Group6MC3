@@ -269,6 +269,11 @@
                     <tabBarItem key="tabBarItem" title="setting" image="gear" catalog="system" id="Pes-WV-ZY7"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="editableRepeat" destination="Wgu-BK-Wlm" id="ZpY-T5-qbA"/>
+                        <outlet property="editableSound" destination="66V-ab-ZLM" id="MQT-bc-CPi"/>
+                        <outlet property="editableType" destination="b1q-WA-JGg" id="DZi-Er-lq1"/>
+                        <outlet property="repeatLabel" destination="o7m-Gs-bCc" id="2Mr-Z4-uES"/>
+                        <outlet property="soundLabel" destination="CyJ-BR-TgZ" id="761-HS-y6y"/>
                         <outlet property="switchAlcohol" destination="ZPw-29-BJ8" id="MjG-tI-heY"/>
                         <outlet property="switchBed" destination="q7G-te-y8Q" id="Lao-a7-Mab"/>
                         <outlet property="switchCaffeine" destination="Q37-2R-uHo" id="AyW-WT-AXR"/>
@@ -277,6 +282,7 @@
                         <outlet property="switchExercise" destination="sng-SS-95B" id="92G-6Z-Fun"/>
                         <outlet property="switchGadget" destination="tJo-MC-GNM" id="vDm-Hv-p40"/>
                         <outlet property="switchSugar" destination="wEQ-iz-FEk" id="AmT-sa-ZfM"/>
+                        <outlet property="typeLabel" destination="M9g-7l-huQ" id="aqL-MA-REP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

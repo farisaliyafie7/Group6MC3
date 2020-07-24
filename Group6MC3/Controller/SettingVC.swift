@@ -19,6 +19,13 @@ class SettingVC: UIViewController {
     @IBOutlet weak var switchBed: UISwitch!
     @IBOutlet weak var switchEncouragement: UISwitch!
     
+    @IBOutlet weak var soundLabel: UILabel!
+    @IBOutlet weak var editableSound: UILabel!
+    @IBOutlet weak var repeatLabel: UILabel!
+    @IBOutlet weak var editableRepeat: UILabel!
+    @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var editableType: UILabel!
+    
     let reminder = ReminderController()
     
     override func viewDidLoad() {
@@ -89,12 +96,36 @@ class SettingVC: UIViewController {
     // Start: All Alarm Tap Gesture Action
     @IBAction func soundSetting(_ sender: UITapGestureRecognizer) {
         print("soundTapped")
+        soundLabel.alpha = 0.5
+        editableSound.alpha = 0.5
+        //Code should execute after 0.2 second delay.
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.2){
+            //Bring's sender's opacity back up to fully opaque.
+            self.soundLabel.alpha = 1.0
+            self.editableSound.alpha = 1.0
+        }
     }
     @IBAction func repeatSetting(_ sender: UITapGestureRecognizer) {
         print("repeatTapped")
+        repeatLabel.alpha = 0.5
+        editableRepeat.alpha = 0.5
+        //Code should execute after 0.2 second delay.
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.2){
+            //Bring's sender's opacity back up to fully opaque.
+            self.repeatLabel.alpha = 1.0
+            self.editableRepeat.alpha = 1.0
+        }
     }
     @IBAction func typeSetting(_ sender: UITapGestureRecognizer) {
         print("typeTapped")
+        typeLabel.alpha = 0.5
+        editableType.alpha = 0.5
+        //Code should execute after 0.2 second delay.
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.2){
+            //Bring's sender's opacity back up to fully opaque.
+            self.typeLabel.alpha = 1.0
+            self.editableType.alpha = 1.0
+        }
     }
     // End: All Alarm Tap Gesture Action
 }
