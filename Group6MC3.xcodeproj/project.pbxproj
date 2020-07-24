@@ -9,14 +9,18 @@
 /* Begin PBXBuildFile section */
 		05206B1424C93CF6004DCF38 /* setSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05206B1324C93CF6004DCF38 /* setSchedule.storyboard */; };
 		05206B1624C93D08004DCF38 /* setSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05206B1524C93D08004DCF38 /* setSchedule.swift */; };
+		AE51BFDE24CA7EBE006AAFFA /* ClockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE51BFDC24CA7EBE006AAFFA /* ClockVC.swift */; };
+		AE51BFDF24CA7EBE006AAFFA /* LightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE51BFDD24CA7EBE006AAFFA /* LightVC.swift */; };
 		AE6A915824C919A20097A9AF /* TabNav.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915724C919A20097A9AF /* TabNav.storyboard */; };
 		AE6A915A24C923260097A9AF /* Clock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915924C923260097A9AF /* Clock.storyboard */; };
 		AE6A915C24C9234B0097A9AF /* Light.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915B24C9234B0097A9AF /* Light.storyboard */; };
 		AE6A915E24C9235A0097A9AF /* Statistic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915D24C9235A0097A9AF /* Statistic.storyboard */; };
 		AE6A916024C923AF0097A9AF /* Sound.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915F24C923AF0097A9AF /* Sound.storyboard */; };
+		AE6A916824C9388C0097A9AF /* ReminderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6A916724C9388C0097A9AF /* ReminderController.swift */; };
+		AEA6EF4C24C9A75D00FC0FAE /* AlarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6EF4B24C9A75D00FC0FAE /* AlarmController.swift */; };
 		AEAAB69024C68EB200A47532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAB68F24C68EB200A47532 /* AppDelegate.swift */; };
 		AEAAB69224C68EB200A47532 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAB69124C68EB200A47532 /* SceneDelegate.swift */; };
-		AEAAB69424C68EB200A47532 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAB69324C68EB200A47532 /* SettingController.swift */; };
+		AEAAB69424C68EB200A47532 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAB69324C68EB200A47532 /* SettingVC.swift */; };
 		AEAAB69724C68EB200A47532 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEAAB69524C68EB200A47532 /* Setting.storyboard */; };
 		AEAAB69A24C68EB200A47532 /* Group6MC3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEAAB69824C68EB200A47532 /* Group6MC3.xcdatamodeld */; };
 		AEAAB69C24C68EB400A47532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEAAB69B24C68EB400A47532 /* Assets.xcassets */; };
@@ -27,15 +31,19 @@
 /* Begin PBXFileReference section */
 		05206B1324C93CF6004DCF38 /* setSchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = setSchedule.storyboard; sourceTree = "<group>"; };
 		05206B1524C93D08004DCF38 /* setSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setSchedule.swift; sourceTree = "<group>"; };
+		AE51BFDC24CA7EBE006AAFFA /* ClockVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockVC.swift; sourceTree = "<group>"; };
+		AE51BFDD24CA7EBE006AAFFA /* LightVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightVC.swift; sourceTree = "<group>"; };
 		AE6A915724C919A20097A9AF /* TabNav.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabNav.storyboard; sourceTree = "<group>"; };
 		AE6A915924C923260097A9AF /* Clock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Clock.storyboard; sourceTree = "<group>"; };
 		AE6A915B24C9234B0097A9AF /* Light.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Light.storyboard; sourceTree = "<group>"; };
 		AE6A915D24C9235A0097A9AF /* Statistic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Statistic.storyboard; sourceTree = "<group>"; };
 		AE6A915F24C923AF0097A9AF /* Sound.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sound.storyboard; sourceTree = "<group>"; };
+		AE6A916724C9388C0097A9AF /* ReminderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReminderController.swift; path = ../../ReminderController.swift; sourceTree = "<group>"; };
+		AEA6EF4B24C9A75D00FC0FAE /* AlarmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmController.swift; sourceTree = "<group>"; };
 		AEAAB68C24C68EB200A47532 /* Group6MC3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group6MC3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEAAB68F24C68EB200A47532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEAAB69124C68EB200A47532 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AEAAB69324C68EB200A47532 /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		AEAAB69324C68EB200A47532 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		AEAAB69624C68EB200A47532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setting.storyboard; sourceTree = "<group>"; };
 		AEAAB69924C68EB200A47532 /* Group6MC3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Group6MC3.xcdatamodel; sourceTree = "<group>"; };
 		AEAAB69B24C68EB400A47532 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,12 +108,12 @@
 			isa = PBXGroup;
 			children = (
 				AE6A915724C919A20097A9AF /* TabNav.storyboard */,
-				AEAAB6B524C6AAC900A47532 /* BackgroundView.swift */,
 				AE6A915924C923260097A9AF /* Clock.storyboard */,
 				AE6A915B24C9234B0097A9AF /* Light.storyboard */,
 				AE6A915D24C9235A0097A9AF /* Statistic.storyboard */,
 				AE6A915F24C923AF0097A9AF /* Sound.storyboard */,
 				AEAAB69524C68EB200A47532 /* Setting.storyboard */,
+				AEAAB6B524C6AAC900A47532 /* BackgroundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -113,7 +121,11 @@
 		AEAAB6B424C6AA1400A47532 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AEAAB69324C68EB200A47532 /* SettingController.swift */,
+				AE51BFDC24CA7EBE006AAFFA /* ClockVC.swift */,
+				AE51BFDD24CA7EBE006AAFFA /* LightVC.swift */,
+				AEAAB69324C68EB200A47532 /* SettingVC.swift */,
+				AE6A916724C9388C0097A9AF /* ReminderController.swift */,
+				AEA6EF4B24C9A75D00FC0FAE /* AlarmController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,11 +208,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEAAB69A24C68EB200A47532 /* Group6MC3.xcdatamodeld in Sources */,
-				AEAAB69424C68EB200A47532 /* SettingController.swift in Sources */,
+				AEAAB69424C68EB200A47532 /* SettingVC.swift in Sources */,
 				AEAAB69024C68EB200A47532 /* AppDelegate.swift in Sources */,
+				AE51BFDF24CA7EBE006AAFFA /* LightVC.swift in Sources */,
 				05206B1624C93D08004DCF38 /* setSchedule.swift in Sources */,
+				AE51BFDE24CA7EBE006AAFFA /* ClockVC.swift in Sources */,
 				AEAAB69224C68EB200A47532 /* SceneDelegate.swift in Sources */,
 				AEAAB6B624C6AAC900A47532 /* BackgroundView.swift in Sources */,
+				AE6A916824C9388C0097A9AF /* ReminderController.swift in Sources */,
+				AEA6EF4C24C9A75D00FC0FAE /* AlarmController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
