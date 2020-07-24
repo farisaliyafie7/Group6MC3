@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ClockVC-->
+        <!--Clock-->
         <scene sceneID="S2g-Nq-MFM">
             <objects>
                 <viewController storyboardIdentifier="clock" id="0OH-FR-e7w" customClass="ClockVC" customModule="Group6MC3" customModuleProvider="target" sceneMemberID="viewController">
@@ -96,6 +96,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="mdb-qo-13Z"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Clock" image="clock.fill" catalog="system" id="vb5-rN-ZvA"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="bedtimeLabel" destination="v7o-iM-I1u" id="HT9-Zt-uw8"/>
                         <outlet property="bigLabel" destination="W1c-9S-mDa" id="bnG-jp-Bvc"/>
@@ -115,5 +117,6 @@
         <image name="Background" width="414" height="896"/>
         <image name="Line" width="2" height="64"/>
         <image name="Sleep Button" width="245" height="245"/>
+        <image name="clock.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>

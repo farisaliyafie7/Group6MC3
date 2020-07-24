@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--LightVC-->
+        <!--Light-->
         <scene sceneID="OOq-Ak-VTZ">
             <objects>
                 <viewController storyboardIdentifier="light" id="4Uz-eI-acA" customClass="LightVC" customModule="Group6MC3" customModuleProvider="target" sceneMemberID="viewController">
@@ -137,6 +137,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="RgF-3Q-oZd"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Light" image="lightbulb.fill" catalog="system" id="gA2-PU-h1i"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NFv-SZ-TZO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -147,6 +149,7 @@
         <image name="Background" width="414" height="896"/>
         <image name="Line2" width="322" height="1"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
         <image name="sun.max.fill" catalog="system" width="128" height="124"/>
         <image name="sun.min.fill" catalog="system" width="128" height="121"/>
         <image name="􀆶" width="27" height="29"/>
