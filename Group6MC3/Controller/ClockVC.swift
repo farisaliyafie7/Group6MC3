@@ -23,6 +23,8 @@ class ClockVC: UIViewController {
     
     var timer = Timer()
     var isOrange : Bool = false
+    var bedRecieved : String = ""
+    var wakeRecieved : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,6 +98,10 @@ class ClockVC: UIViewController {
         else{
             clockLabel.text = "\(hour):\(minute)"
         }
+    }
+    
+    @IBAction func unwindToHome (_ sender:UIStoryboardSegue){
+        
     }
    
 }
