@@ -236,12 +236,14 @@ class setSchedule: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
         if ageGroup == "" || bedTime == "" || wakeTime == "" {
             showAlert()
         }else{
-            
+            bedTimeField.text = bedTime
+            wakeTimeField.text = wakeTime
+            self.performSegue(withIdentifier: "unwindToHome", sender: self)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //let destVC = segue.destination as! HomeScreen
+        //let destVC = segue.destination as! HomeScreen (page glen)
         //destVC.passedBedTime = bedTime
         //destVC.passedWakeTime = wakeTime
     }

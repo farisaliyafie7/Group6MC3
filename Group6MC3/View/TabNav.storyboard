@@ -30,13 +30,13 @@
             </objects>
             <point key="canvasLocation" x="-644" y="-175"/>
         </scene>
-        <!--Clock -->
+        <!--Clock-->
         <scene sceneID="jRY-Eu-HhR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EIe-54-DuI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewControllerPlaceholder storyboardName="Clock" referencedIdentifier="Clock " id="Jw8-no-x29" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Clock" id="Jw8-no-x29" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Clock" image="clock.fill" catalog="system" id="dix-XA-foL"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EIe-54-DuI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1162" y="282"/>
         </scene>
