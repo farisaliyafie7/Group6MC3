@@ -88,13 +88,13 @@ class SettingVC: UIViewController {
     
     // Start: All Alarm Tap Gesture Action
     @IBAction func soundSetting(_ sender: UITapGestureRecognizer) {
-        
+        print("soundTapped")
     }
     @IBAction func repeatSetting(_ sender: UITapGestureRecognizer) {
-        
+        print("repeatTapped")
     }
     @IBAction func typeSetting(_ sender: UITapGestureRecognizer) {
-        
+        print("typeTapped")
     }
     // End: All Alarm Tap Gesture Action
 }
