@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="-1202" y="303"/>
         </scene>
-        <!--Light-->
+        <!--light-->
         <scene sceneID="Dmv-mD-HJ8">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="light" storyboardName="Light" id="1im-9v-cQY" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Light" referencedIdentifier="light" id="1im-9v-cQY" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Light" image="lightbulb.fill" catalog="system" id="hPu-U4-xG3"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibB-ZV-duE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="-644" y="302"/>
         </scene>
-        <!--Sound-->
+        <!--sound-->
         <scene sceneID="hCp-lF-TI4">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="sound" storyboardName="Sound" id="flH-OJ-ADf" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Sound" referencedIdentifier="sound" id="flH-OJ-ADf" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Sound" image="music.note.list" catalog="system" id="Eua-6U-csI"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h5j-ON-2JV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
