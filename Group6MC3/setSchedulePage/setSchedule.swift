@@ -243,9 +243,9 @@ class setSchedule: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //let destVC = segue.destination as! HomeScreen (page glen)
-        //destVC.passedBedTime = bedTime
-        //destVC.passedWakeTime = wakeTime
+        let destVC = segue.destination as! ClockVC
+        destVC.bedReceived = bedTime
+        destVC.wakeReceived = wakeTime
     }
     
     //func buat di copas ke glen

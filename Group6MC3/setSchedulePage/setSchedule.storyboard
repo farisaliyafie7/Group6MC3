@@ -96,6 +96,7 @@
                                 <state key="normal" image="Set"/>
                                 <connections>
                                     <action selector="setBtn:" destination="V0n-3g-WjE" eventType="touchUpInside" id="x5Y-KD-j8A"/>
+                                    <segue destination="3sC-SA-NFX" kind="unwind" identifier="unwindToHome" unwindAction="unwindToHome:" id="7TL-BX-2pg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -110,6 +111,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UYy-gX-FgC" sceneMemberID="firstResponder"/>
+                <exit id="3sC-SA-NFX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
