@@ -68,6 +68,7 @@ class ClockVC: UIViewController {
     @objc func updatePerSecond(){
         displayClock()
         checkTime()
+        setWakeBedTime()
     }
     
     func checkTime(){
@@ -97,6 +98,16 @@ class ClockVC: UIViewController {
         }
         else{
             clockLabel.text = "\(hour):\(minute)"
+        }
+    }
+    func setWakeBedTime(){
+        if wakeRecieved == ""{
+            waketimeLabel.text = "-"
+            bedtimeLabel.text = "-"
+        }
+        else{
+            waketimeLabel.text = wakeRecieved
+            bedtimeLabel.text = bedRecieved
         }
     }
     

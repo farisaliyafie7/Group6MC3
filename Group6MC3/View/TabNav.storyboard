@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="45t-AE-hxz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="45t-AE-hxz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="-644" y="302"/>
         </scene>
-        <!--sound-->
+        <!--Sound2-->
         <scene sceneID="hCp-lF-TI4">
             <objects>
-                <viewControllerPlaceholder storyboardName="Sound" referencedIdentifier="sound" id="flH-OJ-ADf" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Sound2" id="flH-OJ-ADf" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Sound" image="music.note.list" catalog="system" id="Eua-6U-csI"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h5j-ON-2JV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
