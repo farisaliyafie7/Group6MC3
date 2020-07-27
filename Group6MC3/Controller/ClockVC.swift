@@ -25,6 +25,9 @@ class ClockVC: UIViewController {
     var isOrange : Bool = false
     var bedRecieved : String = ""
     var wakeRecieved : String = ""
+    var timeToSleep : Bool = false
+    var tappedSleep : Bool = false
+    var tappedWake : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +37,7 @@ class ClockVC: UIViewController {
         sleepScheduleOutlet.layer.shadowOffset = CGSize(width: 0, height: 4)
         
         
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector:#selector(updatePerSecond) , userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector:#selector(updatePerSecond) , userInfo: nil, repeats: true)
         
     }
     
@@ -52,13 +55,24 @@ class ClockVC: UIViewController {
 //            bigLabel.text = "Sleep Time!"
 //        }
         
-        if isOrange == true{
+        if timeToSleep == false && isOrange == true{
             sleepButtonOutlet.setImage(#imageLiteral(resourceName: "Sleep Button"), for: .normal)
             clockLabel.textColor = #colorLiteral(red: 1, green: 0.5444618464, blue: 0, alpha: 1)
+            bigLabel.text = "Rise and Shine!"
+            smallLabel.text = "Tap when you're going to sleep"
             isOrange = false
-            bigLabel.text = "Sleep Time!"
-            smallLabel.text = "Tap when you’re going to sleep"
+            tappedWake = true
+            
         }
+        else if timeToSleep == true && isOrange == true{
+            sleepButtonOutlet.setImage(#imageLiteral(resourceName: "Sleep Button"), for: .normal)
+            clockLabel.textColor = #colorLiteral(red: 1, green: 0.5444618464, blue: 0, alpha: 1)
+            bigLabel.text = "Sweet Dreams!"
+            smallLabel.text = "Tap when you wake up"
+            isOrange = false
+            tappedSleep = true
+        }
+        
     }
     
     @IBAction func setSleepSchedule(_ sender: Any) {
@@ -72,12 +86,24 @@ class ClockVC: UIViewController {
     }
     
     func checkTime(){
-        if clockLabel.text == waketimeLabel.text{
+        if clockLabel.text == waketimeLabel.text && tappedWake == false{
             sleepButtonOutlet.setImage(#imageLiteral(resourceName: "Wake Button"), for: .normal)
             clockLabel.textColor = UIColor.white
             isOrange = true
             bigLabel.text = "Wake Up!"
             smallLabel.text = "Tap when you wake up"
+            timeToSleep = false
+            tappedSleep = false
+            
+        }
+        else if clockLabel.text == bedtimeLabel.text && tappedSleep == false {
+            sleepButtonOutlet.setImage(#imageLiteral(resourceName: "Wake Button"), for: .normal)
+            clockLabel.textColor = UIColor.white
+            isOrange = true
+            bigLabel.text = "Sleep Time!"
+            smallLabel.text = "Tap when you're going to sleep"
+            timeToSleep = true
+            tappedWake = false
         }
     }
     
