@@ -94,7 +94,6 @@
 				AEAAB69D24C68EB400A47532 /* LaunchScreen.storyboard */,
 				AEAAB6A024C68EB400A47532 /* Info.plist */,
 				AEAAB69824C68EB200A47532 /* Group6MC3.xcdatamodeld */,
-				AE51BFE224CFC5C6006AAFFA /* TextFieldPicker.swift */,
 			);
 			path = Group6MC3;
 			sourceTree = "<group>";
@@ -124,6 +123,7 @@
 				AEAAB69324C68EB200A47532 /* SettingVC.swift */,
 				AE6A916724C9388C0097A9AF /* ReminderController.swift */,
 				AEA6EF4B24C9A75D00FC0FAE /* AlarmController.swift */,
+				AE51BFE224CFC5C6006AAFFA /* TextFieldPicker.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

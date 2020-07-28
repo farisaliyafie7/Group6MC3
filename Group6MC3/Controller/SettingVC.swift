@@ -11,6 +11,7 @@ import UIKit
 class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate{
     
     let reminder = ReminderController()
+    let TFP = TextFieldPicker()
     
     @IBOutlet weak var switchAlcohol: UISwitch!
     @IBOutlet weak var switchEat: UISwitch!
@@ -32,13 +33,15 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
     var pickerView = UIPickerView()
     
     let soundList = ["Mute","Noise","Calm"]
-    let repeatList = ["5", "10", "15", "20", "25", "30"]
+    let repeatList = ["5 min", "10 min", "15 min", "20 min", "25 min", "30 min"]
     let typeList = ["Tone", "Tone + Vibrate", "Vibrate"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         reminder.content.sound = .default
         customTextField()
+        editableSound.delegate = self
+        editableRepeat.delegate = self
         editableType.delegate = self
     }
     
@@ -50,6 +53,11 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
         editableSound.borderStyle = .none
         editableRepeat.borderStyle = .none
         editableType.borderStyle = .none
+        
+        // default setting
+        editableSound.text = soundList[1]
+        editableRepeat.text = repeatList[0]
+        editableType.text = typeList[1]
     }
     
     // Start : All Switch Actions
@@ -111,15 +119,7 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
     }
     // End: All Switch Actions
     
-    var soundGroup: String{
-        get{
-            return editableSound.text ?? ""
-        }
-        set{
-            editableSound.text = newValue
-        }
-    }
-    
+    // Start: Alarm Setting
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
           1
     }
@@ -127,6 +127,10 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if currentTextField == editableSound{
             return soundList.count
+        }else if currentTextField == editableRepeat{
+            return repeatList.count
+        }else if currentTextField == editableType{
+            return typeList.count
         }else{
             return 0
         }
@@ -135,6 +139,10 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if currentTextField == editableSound{
             return soundList[row]
+        }else if currentTextField == editableRepeat{
+            return repeatList[row]
+        }else if currentTextField == editableType{
+            return typeList[row]
         }else{
             return ""
         }
@@ -142,12 +150,24 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
         
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if currentTextField == editableSound{
-            editableType.text = soundList[row]
+            editableSound.text = soundList[row]
+        }else if currentTextField == editableRepeat{
+            editableRepeat.text = repeatList[row]
+        }else if currentTextField == editableType{
+            editableType.text = typeList[row]
         }
     }
     
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-        return NSAttributedString(string: soundList[row], attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+        var attribute: String?
+        if currentTextField == editableSound{
+            attribute = soundList[row]
+        }else if currentTextField == editableRepeat{
+            attribute = repeatList[row]
+        }else if currentTextField == editableType{
+            attribute = typeList[row]
+        }
+        return NSAttributedString(string: attribute!, attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -158,6 +178,10 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
     
         if textField == editableSound{
             editableSound.inputView = pickerView
+        } else if textField == editableRepeat{
+            editableRepeat.inputView = pickerView
+        }else if textField == editableType{
+            editableType.inputView = pickerView
         }
 
         pickerView.backgroundColor = UIColor(red: 42/255, green: 36/255, blue: 57/255, alpha: 1)
@@ -180,10 +204,6 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
          currentTextField.inputView = pickerView
          self.view.endEditing(true)
     }
-    // Start: All Alarm Tap Gesture Action
-    
-    
-    
-    // End: All Alarm Tap Gesture Action
+    // End: Alarm Setting
 }
 
