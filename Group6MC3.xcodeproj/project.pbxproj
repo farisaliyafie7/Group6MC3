@@ -12,7 +12,6 @@
 		AE51BFDE24CA7EBE006AAFFA /* ClockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE51BFDC24CA7EBE006AAFFA /* ClockVC.swift */; };
 		AE51BFDF24CA7EBE006AAFFA /* LightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE51BFDD24CA7EBE006AAFFA /* LightVC.swift */; };
 		AE51BFE124CA8FD4006AAFFA /* StatisticVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE51BFE024CA8FD4006AAFFA /* StatisticVC.swift */; };
-		AE51BFE324CFC5C6006AAFFA /* TextFieldPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE51BFE224CFC5C6006AAFFA /* TextFieldPicker.swift */; };
 		AE51C00624CFEC36006AAFFA /* nature_rain_thunderstorm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE51C00024CFEC35006AAFFA /* nature_rain_thunderstorm.mp3 */; };
 		AE51C00724CFEC36006AAFFA /* City_Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE51C00124CFEC36006AAFFA /* City_Rain.mp3 */; };
 		AE51C00824CFEC36006AAFFA /* ocean_waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE51C00224CFEC36006AAFFA /* ocean_waves.mp3 */; };
@@ -20,14 +19,12 @@
 		AE51C00A24CFEC36006AAFFA /* Nature_Forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE51C00424CFEC36006AAFFA /* Nature_Forest.mp3 */; };
 		AE51C00B24CFEC36006AAFFA /* camp_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE51C00524CFEC36006AAFFA /* camp_fire.mp3 */; };
 		AE51C00D24CFEEEA006AAFFA /* SoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE51C00C24CFEEEA006AAFFA /* SoundVC.swift */; };
-		AE51C00F24CFEF39006AAFFA /* Sound2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE51C00E24CFEF39006AAFFA /* Sound2.storyboard */; };
 		AE6A915824C919A20097A9AF /* TabNav.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915724C919A20097A9AF /* TabNav.storyboard */; };
 		AE6A915A24C923260097A9AF /* Clock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915924C923260097A9AF /* Clock.storyboard */; };
 		AE6A915C24C9234B0097A9AF /* Light.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915B24C9234B0097A9AF /* Light.storyboard */; };
 		AE6A915E24C9235A0097A9AF /* Statistic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915D24C9235A0097A9AF /* Statistic.storyboard */; };
 		AE6A916024C923AF0097A9AF /* Sound.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915F24C923AF0097A9AF /* Sound.storyboard */; };
 		AE6A916824C9388C0097A9AF /* ReminderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6A916724C9388C0097A9AF /* ReminderController.swift */; };
-		AEA6EF4C24C9A75D00FC0FAE /* AlarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6EF4B24C9A75D00FC0FAE /* AlarmController.swift */; };
 		AEAAB69024C68EB200A47532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAB68F24C68EB200A47532 /* AppDelegate.swift */; };
 		AEAAB69224C68EB200A47532 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAB69124C68EB200A47532 /* SceneDelegate.swift */; };
 		AEAAB69424C68EB200A47532 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAB69324C68EB200A47532 /* SettingVC.swift */; };
@@ -44,7 +41,6 @@
 		AE51BFDC24CA7EBE006AAFFA /* ClockVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockVC.swift; sourceTree = "<group>"; };
 		AE51BFDD24CA7EBE006AAFFA /* LightVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightVC.swift; sourceTree = "<group>"; };
 		AE51BFE024CA8FD4006AAFFA /* StatisticVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticVC.swift; sourceTree = "<group>"; };
-		AE51BFE224CFC5C6006AAFFA /* TextFieldPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPicker.swift; sourceTree = "<group>"; };
 		AE51C00024CFEC35006AAFFA /* nature_rain_thunderstorm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = nature_rain_thunderstorm.mp3; path = "../../../Downloads/Sound MC3/nature_rain_thunderstorm.mp3"; sourceTree = "<group>"; };
 		AE51C00124CFEC36006AAFFA /* City_Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = City_Rain.mp3; path = "../../../Downloads/Sound MC3/City_Rain.mp3"; sourceTree = "<group>"; };
 		AE51C00224CFEC36006AAFFA /* ocean_waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ocean_waves.mp3; path = "../../../Downloads/Sound MC3/ocean_waves.mp3"; sourceTree = "<group>"; };
@@ -52,14 +48,12 @@
 		AE51C00424CFEC36006AAFFA /* Nature_Forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Nature_Forest.mp3; path = "../../../Downloads/Sound MC3/Nature_Forest.mp3"; sourceTree = "<group>"; };
 		AE51C00524CFEC36006AAFFA /* camp_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = camp_fire.mp3; path = "../../../Downloads/Sound MC3/camp_fire.mp3"; sourceTree = "<group>"; };
 		AE51C00C24CFEEEA006AAFFA /* SoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundVC.swift; sourceTree = "<group>"; };
-		AE51C00E24CFEF39006AAFFA /* Sound2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sound2.storyboard; sourceTree = "<group>"; };
 		AE6A915724C919A20097A9AF /* TabNav.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabNav.storyboard; sourceTree = "<group>"; };
 		AE6A915924C923260097A9AF /* Clock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Clock.storyboard; sourceTree = "<group>"; };
 		AE6A915B24C9234B0097A9AF /* Light.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Light.storyboard; sourceTree = "<group>"; };
 		AE6A915D24C9235A0097A9AF /* Statistic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Statistic.storyboard; sourceTree = "<group>"; };
 		AE6A915F24C923AF0097A9AF /* Sound.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sound.storyboard; sourceTree = "<group>"; };
 		AE6A916724C9388C0097A9AF /* ReminderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReminderController.swift; path = ../../ReminderController.swift; sourceTree = "<group>"; };
-		AEA6EF4B24C9A75D00FC0FAE /* AlarmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmController.swift; sourceTree = "<group>"; };
 		AEAAB68C24C68EB200A47532 /* Group6MC3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group6MC3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEAAB68F24C68EB200A47532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEAAB69124C68EB200A47532 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,7 +122,6 @@
 				05206B1324C93CF6004DCF38 /* setSchedule.storyboard */,
 				AE6A915B24C9234B0097A9AF /* Light.storyboard */,
 				AE6A915D24C9235A0097A9AF /* Statistic.storyboard */,
-				AE51C00E24CFEF39006AAFFA /* Sound2.storyboard */,
 				AE6A915F24C923AF0097A9AF /* Sound.storyboard */,
 				AEAAB69524C68EB200A47532 /* Setting.storyboard */,
 				AEAAB6B524C6AAC900A47532 /* BackgroundView.swift */,
@@ -146,8 +139,6 @@
 				AE51C00C24CFEEEA006AAFFA /* SoundVC.swift */,
 				AEAAB69324C68EB200A47532 /* SettingVC.swift */,
 				AE6A916724C9388C0097A9AF /* ReminderController.swift */,
-				AEA6EF4B24C9A75D00FC0FAE /* AlarmController.swift */,
-				AE51BFE224CFC5C6006AAFFA /* TextFieldPicker.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -213,7 +204,6 @@
 				AE51C00B24CFEC36006AAFFA /* camp_fire.mp3 in Resources */,
 				AE6A916024C923AF0097A9AF /* Sound.storyboard in Resources */,
 				AE6A915824C919A20097A9AF /* TabNav.storyboard in Resources */,
-				AE51C00F24CFEF39006AAFFA /* Sound2.storyboard in Resources */,
 				AE51C00924CFEC36006AAFFA /* nature_wind.mp3 in Resources */,
 				AEAAB69F24C68EB400A47532 /* LaunchScreen.storyboard in Resources */,
 				AEAAB69C24C68EB400A47532 /* Assets.xcassets in Resources */,
@@ -239,7 +229,6 @@
 				AEAAB69A24C68EB200A47532 /* Group6MC3.xcdatamodeld in Sources */,
 				AEAAB69424C68EB200A47532 /* SettingVC.swift in Sources */,
 				AEAAB69024C68EB200A47532 /* AppDelegate.swift in Sources */,
-				AE51BFE324CFC5C6006AAFFA /* TextFieldPicker.swift in Sources */,
 				AE51BFDF24CA7EBE006AAFFA /* LightVC.swift in Sources */,
 				AE51BFE124CA8FD4006AAFFA /* StatisticVC.swift in Sources */,
 				05206B1624C93D08004DCF38 /* setSchedule.swift in Sources */,
@@ -248,7 +237,6 @@
 				AEAAB6B624C6AAC900A47532 /* BackgroundView.swift in Sources */,
 				AE51C00D24CFEEEA006AAFFA /* SoundVC.swift in Sources */,
 				AE6A916824C9388C0097A9AF /* ReminderController.swift in Sources */,
-				AEA6EF4C24C9A75D00FC0FAE /* AlarmController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

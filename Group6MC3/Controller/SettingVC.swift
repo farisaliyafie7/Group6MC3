@@ -11,7 +11,6 @@ import UIKit
 class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate{
     
     let reminder = ReminderController()
-    let TFP = TextFieldPicker()
     
     @IBOutlet weak var switchAlcohol: UISwitch!
     @IBOutlet weak var switchEat: UISwitch!

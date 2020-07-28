@@ -1,11 +1,10 @@
 //
-//  ClockVC.swift
+//  aClockVC.swift
 //  Group6MC3
 //
 //  Created by Glendito Jeremiah Palendeng on 21/07/20.
 //  Copyright © 2020 Faris Ali Yafie. All rights reserved.
 //
-
 import UIKit
 
 class ClockVC: UIViewController {
@@ -68,6 +67,7 @@ class ClockVC: UIViewController {
     @objc func updatePerSecond(){
         displayClock()
         checkTime()
+        setWakeBedTime()
     }
     
     func checkTime(){
@@ -97,6 +97,16 @@ class ClockVC: UIViewController {
         }
         else{
             clockLabel.text = "\(hour):\(minute)"
+        }
+    }
+    func setWakeBedTime(){
+        if wakeRecieved == ""{
+            waketimeLabel.text = "-"
+            bedtimeLabel.text = "-"
+        }
+        else{
+            waketimeLabel.text = wakeRecieved
+            bedtimeLabel.text = bedRecieved
         }
     }
     
