@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="-644" y="302"/>
         </scene>
-        <!--sound-->
+        <!--Sound2-->
         <scene sceneID="hCp-lF-TI4">
             <objects>
-                <viewControllerPlaceholder storyboardName="Sound" referencedIdentifier="sound" id="flH-OJ-ADf" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Sound2" id="flH-OJ-ADf" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Sound" image="music.note.list" catalog="system" id="Eua-6U-csI"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h5j-ON-2JV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

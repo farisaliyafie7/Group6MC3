@@ -16,9 +16,8 @@ class setSchedule: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
     
     var ageGroupArr = [" ","School Age Child (6-13 years old)","Teenager (14-17 years old)","Young Adult (18-25 years old)", "Adult (26 - 64 years old)", "Elderly (65+ years old)"]
     
-//    var pickerView = UIPickerView()
-//    var currentTextField = UITextField()
-    let TFP = TextFieldPicker()
+    var pickerView = UIPickerView()
+    var currentTextField = UITextField()
     
     var alert: UIAlertController!
     
@@ -95,7 +94,7 @@ class setSchedule: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        if TFP.currentTextField == ageGroupField{
+        if currentTextField == ageGroupField{
             return ageGroupArr.count
         }else{
             return 0
@@ -103,7 +102,7 @@ class setSchedule: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if TFP.currentTextField == ageGroupField{
+        if currentTextField == ageGroupField{
             return ageGroupArr[row]
         }else{
             return ""
@@ -111,7 +110,7 @@ class setSchedule: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
     }
         
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if TFP.currentTextField == ageGroupField{
+        if currentTextField == ageGroupField{
             ageGroupField.text = ageGroupArr[row]
             sleepDurationChecker()
         }
@@ -122,16 +121,16 @@ class setSchedule: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        TFP.pickerView.dataSource = self
-        TFP.pickerView.delegate = self
+        pickerView.dataSource = self
+        pickerView.delegate = self
         
-        TFP.currentTextField = textField
+        currentTextField = textField
     
         if textField == ageGroupField{
-            ageGroupField.inputView = TFP.pickerView
+            ageGroupField.inputView = pickerView
         }
 
-        TFP.pickerView.backgroundColor = UIColor(red: 42/255, green: 36/255, blue: 57/255, alpha: 1)
+        pickerView.backgroundColor = UIColor(red: 42/255, green: 36/255, blue: 57/255, alpha: 1)
         let toolBar = UIToolbar()
         toolBar.barStyle = UIBarStyle.default
         toolBar.isTranslucent = true
@@ -144,11 +143,11 @@ class setSchedule: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
 
         toolBar.setItems([spaceButton, doneButton], animated: true)
         toolBar.isUserInteractionEnabled = true
-        TFP.currentTextField.inputAccessoryView = toolBar
+        currentTextField.inputAccessoryView = toolBar
     }
     
     @objc func categoryDoneClicked() {
-         TFP.currentTextField.inputView = TFP.pickerView
+         currentTextField.inputView = pickerView
          self.view.endEditing(true)
     }
     
