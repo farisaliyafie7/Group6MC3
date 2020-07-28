@@ -8,7 +8,9 @@
 
 import UIKit
 
-class SettingVC: UIViewController {
+class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate{
+    
+    let reminder = ReminderController()
     
     @IBOutlet weak var switchAlcohol: UISwitch!
     @IBOutlet weak var switchEat: UISwitch!
@@ -20,18 +22,34 @@ class SettingVC: UIViewController {
     @IBOutlet weak var switchEncouragement: UISwitch!
     
     @IBOutlet weak var soundLabel: UILabel!
-    @IBOutlet weak var editableSound: UILabel!
+    @IBOutlet weak var editableSound: UITextField!
     @IBOutlet weak var repeatLabel: UILabel!
-    @IBOutlet weak var editableRepeat: UILabel!
+    @IBOutlet weak var editableRepeat: UITextField!
     @IBOutlet weak var typeLabel: UILabel!
-    @IBOutlet weak var editableType: UILabel!
+    @IBOutlet weak var editableType: UITextField!
     
-    let reminder = ReminderController()
+    var currentTextField = UITextField()
+    var pickerView = UIPickerView()
+    
+    let soundList = ["Mute","Noise","Calm"]
+    let repeatList = ["5", "10", "15", "20", "25", "30"]
+    let typeList = ["Tone", "Tone + Vibrate", "Vibrate"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         reminder.content.sound = .default
-        // Do any additional setup after loading the view.
+        customTextField()
+        editableType.delegate = self
+    }
+    
+    // clear all color and border UITextField
+    func customTextField(){
+        editableSound.backgroundColor = UIColor.clear
+        editableRepeat.backgroundColor = UIColor.clear
+        editableType.backgroundColor = UIColor.clear
+        editableSound.borderStyle = .none
+        editableRepeat.borderStyle = .none
+        editableType.borderStyle = .none
     }
     
     // Start : All Switch Actions
@@ -93,40 +111,79 @@ class SettingVC: UIViewController {
     }
     // End: All Switch Actions
     
+    var soundGroup: String{
+        get{
+            return editableSound.text ?? ""
+        }
+        set{
+            editableSound.text = newValue
+        }
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+          1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if currentTextField == editableSound{
+            return soundList.count
+        }else{
+            return 0
+        }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if currentTextField == editableSound{
+            return soundList[row]
+        }else{
+            return ""
+        }
+    }
+        
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if currentTextField == editableSound{
+            editableType.text = soundList[row]
+        }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        return NSAttributedString(string: soundList[row], attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        pickerView.dataSource = self
+        pickerView.delegate = self
+        
+        currentTextField = textField
+    
+        if textField == editableSound{
+            editableSound.inputView = pickerView
+        }
+
+        pickerView.backgroundColor = UIColor(red: 42/255, green: 36/255, blue: 57/255, alpha: 1)
+        let toolBar = UIToolbar()
+        toolBar.barStyle = UIBarStyle.default
+        toolBar.isTranslucent = true
+        toolBar.tintColor = UIColor(red: 255/255, green: 146/255, blue: 0/255, alpha: 1)
+        toolBar.sizeToFit()
+
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector (categoryDoneClicked))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        //let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: nil, action: #selector (categoryDoneClicked)
+
+        toolBar.setItems([spaceButton, doneButton], animated: true)
+        toolBar.isUserInteractionEnabled = true
+        currentTextField.inputAccessoryView = toolBar
+    }
+    
+    @objc func categoryDoneClicked() {
+         currentTextField.inputView = pickerView
+         self.view.endEditing(true)
+    }
     // Start: All Alarm Tap Gesture Action
-    @IBAction func soundSetting(_ sender: UITapGestureRecognizer) {
-        print("soundTapped")
-        soundLabel.alpha = 0.5
-        editableSound.alpha = 0.5
-        //Code should execute after 0.2 second delay.
-        DispatchQueue.main.asyncAfter(deadline: .now()+0.2){
-            //Bring's sender's opacity back up to fully opaque.
-            self.soundLabel.alpha = 1.0
-            self.editableSound.alpha = 1.0
-        }
-    }
-    @IBAction func repeatSetting(_ sender: UITapGestureRecognizer) {
-        print("repeatTapped")
-        repeatLabel.alpha = 0.5
-        editableRepeat.alpha = 0.5
-        //Code should execute after 0.2 second delay.
-        DispatchQueue.main.asyncAfter(deadline: .now()+0.2){
-            //Bring's sender's opacity back up to fully opaque.
-            self.repeatLabel.alpha = 1.0
-            self.editableRepeat.alpha = 1.0
-        }
-    }
-    @IBAction func typeSetting(_ sender: UITapGestureRecognizer) {
-        print("typeTapped")
-        typeLabel.alpha = 0.5
-        editableType.alpha = 0.5
-        //Code should execute after 0.2 second delay.
-        DispatchQueue.main.asyncAfter(deadline: .now()+0.2){
-            //Bring's sender's opacity back up to fully opaque.
-            self.typeLabel.alpha = 1.0
-            self.editableType.alpha = 1.0
-        }
-    }
+    
+    
+    
     // End: All Alarm Tap Gesture Action
 }
 

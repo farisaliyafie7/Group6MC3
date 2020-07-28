@@ -9,6 +9,7 @@ import UserNotifications
 
 // This class has function to give user notifications
 class ReminderController{
+    
     // 1. Ask for permission
     let center = UNUserNotificationCenter.current()
     // 2. Create the notification content

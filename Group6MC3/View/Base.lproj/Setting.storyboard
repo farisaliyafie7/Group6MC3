@@ -171,76 +171,64 @@
                                 <rect key="frame" x="39" y="644" width="333" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Noise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66V-ab-ZLM">
-                                        <rect key="frame" x="279" y="0.0" width="54" height="25"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <gestureRecognizers/>
-                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
-                                        <color key="textColor" red="1" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyJ-BR-TgZ">
-                                        <rect key="frame" x="0.0" y="-1" width="61" height="25"/>
+                                        <rect key="frame" x="0.0" y="-1" width="161" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Noise" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lac-bu-UDc">
+                                        <rect key="frame" x="0.0" y="-5" width="333" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" red="1" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="sFO-JX-bvq" appends="YES" id="4QO-4U-H8G"/>
-                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VjI-au-Wfp">
                                 <rect key="frame" x="37" y="696" width="333" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Repeat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7m-Gs-bCc">
-                                        <rect key="frame" x="0.0" y="0.0" width="68" height="25"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="161" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgu-BK-Wlm">
-                                        <rect key="frame" x="281" y="0.0" width="52" height="25"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZHS-UG-aBq">
+                                        <rect key="frame" x="0.0" y="-5" width="333" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <gestureRecognizers/>
-                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
                                         <color key="textColor" red="1" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="PND-5i-66C" appends="YES" id="kge-xE-7Ps"/>
-                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jiU-pZ-BvP">
                                 <rect key="frame" x="37" y="744" width="333" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9g-7l-huQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="25"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="161" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tone + Vibrate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1q-WA-JGg">
-                                        <rect key="frame" x="197" y="0.0" width="136" height="25"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tone + Vibrate" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4yx-5l-cUI">
+                                        <rect key="frame" x="0.0" y="-5" width="333" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <gestureRecognizers/>
-                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
                                         <color key="textColor" red="1" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="ZTW-HH-YqB" appends="YES" id="Kx6-sS-xgx"/>
-                                </connections>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Settings" translatesAutoresizingMaskIntoConstraints="NO" id="4iV-rQ-7Vd">
                                 <rect key="frame" x="20" y="44" width="142" height="35"/>
@@ -269,9 +257,9 @@
                     <tabBarItem key="tabBarItem" title="setting" image="gear" catalog="system" id="Pes-WV-ZY7"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="editableRepeat" destination="Wgu-BK-Wlm" id="ZpY-T5-qbA"/>
-                        <outlet property="editableSound" destination="66V-ab-ZLM" id="MQT-bc-CPi"/>
-                        <outlet property="editableType" destination="b1q-WA-JGg" id="DZi-Er-lq1"/>
+                        <outlet property="editableRepeat" destination="ZHS-UG-aBq" id="Gyr-Tv-hom"/>
+                        <outlet property="editableSound" destination="Lac-bu-UDc" id="veu-gZ-7zF"/>
+                        <outlet property="editableType" destination="4yx-5l-cUI" id="d8i-o9-fhI"/>
                         <outlet property="repeatLabel" destination="o7m-Gs-bCc" id="2Mr-Z4-uES"/>
                         <outlet property="soundLabel" destination="CyJ-BR-TgZ" id="761-HS-y6y"/>
                         <outlet property="switchAlcohol" destination="ZPw-29-BJ8" id="MjG-tI-heY"/>
@@ -286,21 +274,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="sFO-JX-bvq">
-                    <connections>
-                        <action selector="soundSetting:" destination="BYZ-38-t0r" id="EV9-GK-ZpN"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="PND-5i-66C">
-                    <connections>
-                        <action selector="repeatSetting:" destination="BYZ-38-t0r" id="9pg-6f-HmE"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="ZTW-HH-YqB">
-                    <connections>
-                        <action selector="typeSetting:" destination="BYZ-38-t0r" id="2d7-TQ-sBz"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
@@ -312,7 +285,7 @@
         <image name="Rectangle2" width="360" height="189"/>
         <image name="Reminders" width="118" height="19"/>
         <image name="Settings" width="142" height="35"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="gear" width="150" height="169"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
     </resources>
 </document>

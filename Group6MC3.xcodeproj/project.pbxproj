@@ -12,6 +12,7 @@
 		AE51BFDE24CA7EBE006AAFFA /* ClockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE51BFDC24CA7EBE006AAFFA /* ClockVC.swift */; };
 		AE51BFDF24CA7EBE006AAFFA /* LightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE51BFDD24CA7EBE006AAFFA /* LightVC.swift */; };
 		AE51BFE124CA8FD4006AAFFA /* StatisticVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE51BFE024CA8FD4006AAFFA /* StatisticVC.swift */; };
+		AE51BFE324CFC5C6006AAFFA /* TextFieldPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE51BFE224CFC5C6006AAFFA /* TextFieldPicker.swift */; };
 		AE6A915824C919A20097A9AF /* TabNav.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915724C919A20097A9AF /* TabNav.storyboard */; };
 		AE6A915A24C923260097A9AF /* Clock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915924C923260097A9AF /* Clock.storyboard */; };
 		AE6A915C24C9234B0097A9AF /* Light.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915B24C9234B0097A9AF /* Light.storyboard */; };
@@ -35,6 +36,7 @@
 		AE51BFDC24CA7EBE006AAFFA /* ClockVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockVC.swift; sourceTree = "<group>"; };
 		AE51BFDD24CA7EBE006AAFFA /* LightVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightVC.swift; sourceTree = "<group>"; };
 		AE51BFE024CA8FD4006AAFFA /* StatisticVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticVC.swift; sourceTree = "<group>"; };
+		AE51BFE224CFC5C6006AAFFA /* TextFieldPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPicker.swift; sourceTree = "<group>"; };
 		AE6A915724C919A20097A9AF /* TabNav.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabNav.storyboard; sourceTree = "<group>"; };
 		AE6A915924C923260097A9AF /* Clock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Clock.storyboard; sourceTree = "<group>"; };
 		AE6A915B24C9234B0097A9AF /* Light.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Light.storyboard; sourceTree = "<group>"; };
@@ -65,15 +67,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05206B1024C93CAC004DCF38 /* setSchedulePage */ = {
-			isa = PBXGroup;
-			children = (
-				05206B1324C93CF6004DCF38 /* setSchedule.storyboard */,
-				05206B1524C93D08004DCF38 /* setSchedule.swift */,
-			);
-			path = setSchedulePage;
-			sourceTree = "<group>";
-		};
 		AEAAB68324C68EB200A47532 = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +86,6 @@
 		AEAAB68E24C68EB200A47532 /* Group6MC3 */ = {
 			isa = PBXGroup;
 			children = (
-				05206B1024C93CAC004DCF38 /* setSchedulePage */,
 				AEAAB68F24C68EB200A47532 /* AppDelegate.swift */,
 				AEAAB69124C68EB200A47532 /* SceneDelegate.swift */,
 				AEAAB6B424C6AA1400A47532 /* Controller */,
@@ -102,6 +94,7 @@
 				AEAAB69D24C68EB400A47532 /* LaunchScreen.storyboard */,
 				AEAAB6A024C68EB400A47532 /* Info.plist */,
 				AEAAB69824C68EB200A47532 /* Group6MC3.xcdatamodeld */,
+				AE51BFE224CFC5C6006AAFFA /* TextFieldPicker.swift */,
 			);
 			path = Group6MC3;
 			sourceTree = "<group>";
@@ -111,6 +104,7 @@
 			children = (
 				AE6A915724C919A20097A9AF /* TabNav.storyboard */,
 				AE6A915924C923260097A9AF /* Clock.storyboard */,
+				05206B1324C93CF6004DCF38 /* setSchedule.storyboard */,
 				AE6A915B24C9234B0097A9AF /* Light.storyboard */,
 				AE6A915D24C9235A0097A9AF /* Statistic.storyboard */,
 				AE6A915F24C923AF0097A9AF /* Sound.storyboard */,
@@ -124,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				AE51BFDC24CA7EBE006AAFFA /* ClockVC.swift */,
+				05206B1524C93D08004DCF38 /* setSchedule.swift */,
 				AE51BFDD24CA7EBE006AAFFA /* LightVC.swift */,
 				AE51BFE024CA8FD4006AAFFA /* StatisticVC.swift */,
 				AEAAB69324C68EB200A47532 /* SettingVC.swift */,
@@ -213,6 +208,7 @@
 				AEAAB69A24C68EB200A47532 /* Group6MC3.xcdatamodeld in Sources */,
 				AEAAB69424C68EB200A47532 /* SettingVC.swift in Sources */,
 				AEAAB69024C68EB200A47532 /* AppDelegate.swift in Sources */,
+				AE51BFE324CFC5C6006AAFFA /* TextFieldPicker.swift in Sources */,
 				AE51BFDF24CA7EBE006AAFFA /* LightVC.swift in Sources */,
 				AE51BFE124CA8FD4006AAFFA /* StatisticVC.swift in Sources */,
 				05206B1624C93D08004DCF38 /* setSchedule.swift in Sources */,
