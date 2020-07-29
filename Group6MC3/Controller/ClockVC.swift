@@ -1,5 +1,5 @@
 //
-//  ClockVC.swift
+//  xClockVC.swift
 //  Group6MC3
 //
 //  Created by Glendito Jeremiah Palendeng on 21/07/20.

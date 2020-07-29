@@ -7,24 +7,34 @@
 //
 
 import UIKit
+import Charts
 
-class StatisticVC: UIViewController {
+class StatisticVC: UIViewController, ChartViewDelegate {
 
+    var barChart = BarChartView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        barChart.delegate = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        barChart.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.width)
+        barChart.center = view.center
+        view.addSubview(barChart)
+        
+        var entry = [BarChartDataEntry]()
+        for x in 0..<10{
+            entry.append(BarChartDataEntry(x: Double(x), y: Double(x)))
+        }
+        
+        let set = BarChartDataSet(entries: entry)
+        set.colors = ChartColorTemplates.joyful()
+        let data = BarChartData(dataSet: set)
+        
+        barChart.data = data
     }
-    */
 
 }
