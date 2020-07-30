@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate{
     
@@ -35,6 +36,8 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
     let repeatList = ["5 min", "10 min", "15 min", "20 min", "25 min", "30 min"]
     let typeList = ["Tone", "Tone + Vibrate", "Vibrate"]
     
+    var setAlarm = [NSManagedObject]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         reminder.content.sound = .default
@@ -42,6 +45,26 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
         editableSound.delegate = self
         editableRepeat.delegate = self
         editableType.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
+      //1
+      guard let appDelegate =
+        UIApplication.shared.delegate as? AppDelegate else {
+          return
+      }
+      let managedContext =
+        appDelegate.persistentContainer.viewContext
+      //2
+      let fetchRequest =
+        NSFetchRequest<NSManagedObject>(entityName: "Alarm")
+      //3
+      do {
+        setAlarm = try managedContext.fetch(fetchRequest)
+      } catch let error as NSError {
+        print("Could not fetch. \(error), \(error.userInfo)")
+      }
     }
     
     // clear all color and border UITextField
@@ -54,9 +77,15 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
         editableType.borderStyle = .none
         
         // default setting
-        editableSound.text = soundList[1]
-        editableRepeat.text = repeatList[0]
-        editableType.text = typeList[1]
+        if setAlarm.isEmpty{
+            editableSound.text = soundList[1]
+            editableRepeat.text = repeatList[0]
+            editableType.text = typeList[1]
+        }else{
+            editableSound.text = setAlarm[0].value(forKey: "sound") as? String
+            editableRepeat.text = setAlarm[0].value(forKeyPath: "repeated") as? String
+            editableType.text = setAlarm[0].value(forKeyPath: "type") as? String
+        }
     }
     
     // Start : All Switch Actions
@@ -200,9 +229,47 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
     }
     
     @objc func categoryDoneClicked() {
-         currentTextField.inputView = pickerView
-         self.view.endEditing(true)
+        currentTextField.inputView = pickerView
+        let soundToSave = currentTextField.text!
+        self.save(name: soundToSave)
+        self.view.endEditing(true)
     }
     // End: Alarm Setting
+    
+    func save(name: String) {
+      guard let appDelegate =
+        UIApplication.shared.delegate as? AppDelegate else {
+        return
+      }
+      // 1
+      let managedContext =
+        appDelegate.persistentContainer.viewContext
+      
+      // 2
+      let entity =
+        NSEntityDescription.entity(forEntityName: "Alarm",
+                                   in: managedContext)!
+      
+      let alarm = NSManagedObject(entity: entity,
+                                   insertInto: managedContext)
+      
+      // 3
+        alarm.setValue(soundLabel.text!, forKeyPath: "sound")
+        alarm.setValue(soundLabel.text!, forKeyPath: "repeated")
+        alarm.setValue(soundLabel.text!, forKeyPath: "type")
+      // 4
+      do {
+        try managedContext.save()
+        setAlarm.removeAll()
+        setAlarm.append(alarm)
+      } catch let error as NSError {
+        print("Could not save. \(error), \(error.userInfo)")
+      }
+    }
 }
 
+struct alarmModel {
+    let sound: String
+    let repeated: String
+    let type: String
+}
