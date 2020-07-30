@@ -11,6 +11,8 @@
 		05206B1624C93D08004DCF38 /* setSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05206B1524C93D08004DCF38 /* setSchedule.swift */; };
 		652CA04924CD67CB0087DBD0 /* SoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652CA04824CD67CB0087DBD0 /* SoundVC.swift */; };
 		652CA04B24CD67E30087DBD0 /* Sound2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652CA04A24CD67E30087DBD0 /* Sound2.storyboard */; };
+		6566FF9E24D13E2C00D29913 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6566FF9D24D13E2C00D29913 /* OnboardingVC.swift */; };
+		6566FFA024D13F9100D29913 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6566FF9F24D13F9100D29913 /* Onboarding.storyboard */; };
 		65A6802124CDAD1400A3C4A1 /* Nature_Forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65A6801B24CDAD1300A3C4A1 /* Nature_Forest.mp3 */; };
 		65A6802224CDAD1400A3C4A1 /* City_Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65A6801C24CDAD1300A3C4A1 /* City_Rain.mp3 */; };
 		65A6802324CDAD1400A3C4A1 /* camp_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65A6801D24CDAD1300A3C4A1 /* camp_fire.mp3 */; };
@@ -41,6 +43,8 @@
 		05206B1524C93D08004DCF38 /* setSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setSchedule.swift; sourceTree = "<group>"; };
 		652CA04824CD67CB0087DBD0 /* SoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundVC.swift; sourceTree = "<group>"; };
 		652CA04A24CD67E30087DBD0 /* Sound2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sound2.storyboard; sourceTree = "<group>"; };
+		6566FF9D24D13E2C00D29913 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		6566FF9F24D13F9100D29913 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		65A6801B24CDAD1300A3C4A1 /* Nature_Forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Nature_Forest.mp3; path = "../../../Downloads/Sound MC3/Nature_Forest.mp3"; sourceTree = "<group>"; };
 		65A6801C24CDAD1300A3C4A1 /* City_Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = City_Rain.mp3; path = "../../../Downloads/Sound MC3/City_Rain.mp3"; sourceTree = "<group>"; };
 		65A6801D24CDAD1300A3C4A1 /* camp_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = camp_fire.mp3; path = "../../../Downloads/Sound MC3/camp_fire.mp3"; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 				AE6A915F24C923AF0097A9AF /* Sound.storyboard */,
 				AEAAB69524C68EB200A47532 /* Setting.storyboard */,
 				AEAAB6B524C6AAC900A47532 /* BackgroundView.swift */,
+				6566FF9F24D13F9100D29913 /* Onboarding.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 				AEAAB69324C68EB200A47532 /* SettingVC.swift */,
 				AE6A916724C9388C0097A9AF /* ReminderController.swift */,
 				AEA6EF4B24C9A75D00FC0FAE /* AlarmController.swift */,
+				6566FF9D24D13E2C00D29913 /* OnboardingVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -222,6 +228,7 @@
 				AE6A915C24C9234B0097A9AF /* Light.storyboard in Resources */,
 				65A6802524CDAD1400A3C4A1 /* nature_rain_thunderstorm.mp3 in Resources */,
 				65A6802424CDAD1400A3C4A1 /* ocean_waves.mp3 in Resources */,
+				6566FFA024D13F9100D29913 /* Onboarding.storyboard in Resources */,
 				AEAAB69724C68EB200A47532 /* Setting.storyboard in Resources */,
 				05206B1424C93CF6004DCF38 /* setSchedule.storyboard in Resources */,
 				AE6A915A24C923260097A9AF /* Clock.storyboard in Resources */,
@@ -239,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEAAB69A24C68EB200A47532 /* Group6MC3.xcdatamodeld in Sources */,
+				6566FF9E24D13E2C00D29913 /* OnboardingVC.swift in Sources */,
 				AEAAB69424C68EB200A47532 /* SettingVC.swift in Sources */,
 				AEAAB69024C68EB200A47532 /* AppDelegate.swift in Sources */,
 				652CA04924CD67CB0087DBD0 /* SoundVC.swift in Sources */,

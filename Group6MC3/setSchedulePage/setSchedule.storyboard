@@ -96,7 +96,6 @@
                                 <state key="normal" image="Set"/>
                                 <connections>
                                     <action selector="setBtn:" destination="V0n-3g-WjE" eventType="touchUpInside" id="x5Y-KD-j8A"/>
-                                    <segue destination="SO4-6f-4DU" kind="unwind" identifier="unwindToHome" unwindAction="unwindToHome:" id="ntl-z7-DTs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -108,6 +107,7 @@
                         <outlet property="bedTimeField" destination="PYh-um-V64" id="JBN-TT-t7A"/>
                         <outlet property="sleepDurationField" destination="rWa-VA-9n7" id="sg9-mb-Yig"/>
                         <outlet property="wakeTimeField" destination="My4-r4-oe3" id="A0l-cE-tB7"/>
+                        <segue destination="SO4-6f-4DU" kind="unwind" identifier="unwindToHome" unwindAction="unwindToHome:" id="QlX-t1-L2k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UYy-gX-FgC" sceneMemberID="firstResponder"/>

@@ -63,6 +63,7 @@
                                 <rect key="frame" x="85" y="717" width="245" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20053300260000001" green="0.15813976530000001" blue="0.26275587080000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" identifier="clockID"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Set Sleep Schedule">
                                     <color key="titleColor" red="1" green="0.57254901960000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

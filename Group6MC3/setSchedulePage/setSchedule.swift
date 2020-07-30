@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class setSchedule: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
     @IBOutlet weak var ageGroupField: UITextField!
@@ -49,6 +50,8 @@ class setSchedule: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
             wakeTimeField.text = newValue
         }
     }
+    
+    var people: [NSManagedObject] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -226,6 +229,7 @@ class setSchedule: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
         let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(action)
         self.present(alert, animated: true, completion: nil)
+
     }
     
     @IBAction func cancelBtn(_ sender: Any) {
@@ -233,19 +237,62 @@ class setSchedule: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
     }
     
     @IBAction func setBtn(_ sender: Any) {
-        if ageGroup == "" || bedTime == "" || wakeTime == "" {
+      if ageGroupField.text == "" || bedTimeField.text == "" || wakeTimeField.text == "" {
             showAlert()
         }else{
           bedTimeField.text = bedTime
           wakeTimeField.text = wakeTime
+            let bed = bedTimeField.text!
+            let wake = wakeTimeField.text!
+            
+            self.save(bed: bed, wake: wake)
+        
+            
           self.performSegue(withIdentifier: "unwindToHome", sender: self)
+            
+            
         }
+    }
+    
+    func save(bed: String, wake: String) {
+      
+      guard let appDelegate =
+        UIApplication.shared.delegate as? AppDelegate else {
+        return
+      }
+      
+      // 1
+      let managedContext =
+        appDelegate.persistentContainer.viewContext
+      
+      // 2
+      let entity =
+        NSEntityDescription.entity(forEntityName: "Person",
+                                   in: managedContext)!
+      
+      let person = NSManagedObject(entity: entity,
+                                   insertInto: managedContext)
+      
+      // 3
+      person.setValue(bed, forKeyPath: "bedTime")
+      person.setValue(wake, forKeyPath: "wakeTime")
+      
+      // 4
+      do {
+        try managedContext.save()
+        people.removeAll()
+        people.append(person)
+      } catch let error as NSError {
+        print("Could not save. \(error), \(error.userInfo)")
+      }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC = segue.destination as! ClockVC
-        destVC.bedRecieved = bedTime
-        destVC.wakeRecieved = wakeTime
+//        destVC.bedRecieved = bedTime
+//        destVC.wakeRecieved = wakeTime
+       
+          
     }
     
     //func buat di copas ke glen

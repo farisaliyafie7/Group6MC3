@@ -7,6 +7,12 @@
 //
 
 import UIKit
+import CoreData
+
+struct PersonModel {
+    let bedTime : String
+    let wakeTime: String
+}
 
 class ClockVC: UIViewController {
     
@@ -23,11 +29,16 @@ class ClockVC: UIViewController {
     
     var timer = Timer()
     var isOrange : Bool = false
-    var bedRecieved : String = ""
-    var wakeRecieved : String = ""
+//    var bedRecieved : String = ""
+//    var wakeRecieved : String = ""
     var timeToSleep : Bool = false
     var tappedSleep : Bool = false
     var tappedWake : Bool = false
+    
+    var set = setSchedule()
+    
+//    var awakeTime : String = ""
+//    var sleepTime : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,22 +49,16 @@ class ClockVC: UIViewController {
         
         
         timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector:#selector(updatePerSecond) , userInfo: nil, repeats: true)
+        setWakeBedTime()
+        retrieve()
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        retrieve()
+    }
+    
     @IBAction func sleepButtonTapped(_ sender: Any) {
-//        if isWake == true{
-//            sleepButtonOutlet.setImage(#imageLiteral(resourceName: "Wake Button"), for: .normal)
-//            clockLabel.textColor = UIColor.white
-//            isWake = false
-//            bigLabel.text = "Wake Up!"
-//        }
-//        else if isWake == false{
-//            sleepButtonOutlet.setImage(#imageLiteral(resourceName: "Sleep Button"), for: .normal)
-//            clockLabel.textColor = #colorLiteral(red: 1, green: 0.5444618464, blue: 0, alpha: 1)
-//            isWake = true
-//            bigLabel.text = "Sleep Time!"
-//        }
         
         if timeToSleep == false && isOrange == true{
             sleepButtonOutlet.setImage(#imageLiteral(resourceName: "Sleep Button"), for: .normal)
@@ -63,6 +68,8 @@ class ClockVC: UIViewController {
             isOrange = false
             tappedWake = true
             
+//            sleepTime = clockLabel.text!
+            
         }
         else if timeToSleep == true && isOrange == true{
             sleepButtonOutlet.setImage(#imageLiteral(resourceName: "Sleep Button"), for: .normal)
@@ -71,6 +78,8 @@ class ClockVC: UIViewController {
             smallLabel.text = "Tap when you wake up"
             isOrange = false
             tappedSleep = true
+            
+//            awakeTime = clockLabel.text!
         }
         
     }
@@ -82,7 +91,7 @@ class ClockVC: UIViewController {
     @objc func updatePerSecond(){
         displayClock()
         checkTime()
-        setWakeBedTime()
+        
     }
     
     func checkTime(){
@@ -127,18 +136,53 @@ class ClockVC: UIViewController {
         }
     }
     func setWakeBedTime(){
-        if wakeRecieved == ""{
+        if set.people.isEmpty == true{
             waketimeLabel.text = "-"
             bedtimeLabel.text = "-"
         }
         else{
-            waketimeLabel.text = wakeRecieved
-            bedtimeLabel.text = bedRecieved
+            
+            waketimeLabel.text = set.people[0].value(forKeyPath: "wakeTime") as? String
+            bedtimeLabel.text = set.people[0].value(forKeyPath: "bedTime") as? String
+            
         }
+    }
+    func retrieve() -> [PersonModel]{
+        //1
+            var person = [PersonModel]()
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            
+            let managedContext =
+              appDelegate.persistentContainer.viewContext
+            
+            //2
+            let fetchRequest =
+              NSFetchRequest<NSManagedObject>(entityName: "Person")
+            
+            //3
+            do {
+                let result = try managedContext.fetch(fetchRequest) as! [NSManagedObject]
+                    if set.people.isEmpty == true{
+                              waketimeLabel.text = "-"
+                              bedtimeLabel.text = "-"
+                          }
+                          else{
+                              waketimeLabel.text = result[0].value(forKeyPath: "wakeTime") as? String
+                              bedtimeLabel.text = result[0].value(forKeyPath: "bedTime") as? String
+                              
+                          }
+                
+            } catch let error as NSError {
+              print("Could not fetch. \(error), \(error.userInfo)")
+            
+            
+        }
+            return person
     }
     
     @IBAction func unwindToHome (_ sender:UIStoryboardSegue){
         
     }
    
+
 }
