@@ -28,8 +28,7 @@ class StatisticVC: UIViewController, ChartViewDelegate {
         pieView.rotationAngle = 0
         pieView.rotationEnabled = false
         pieView.isUserInteractionEnabled = false
-        
-        //pieView.legend.enabled = false
+        pieView.legend.enabled = false
         
         var entries: [PieChartDataEntry] = Array()
         entries.append(PieChartDataEntry(value: 50.0, label: "Takeout"))
@@ -39,7 +38,7 @@ class StatisticVC: UIViewController, ChartViewDelegate {
         entries.append(PieChartDataEntry(value: 40.0, label: "Home Meals"))
         
         let dataSet = PieChartDataSet(entries: entries, label: "")
-        let c1 = NSUIColor(hex: 0x3A015C)
+        let c1 = NSUIColor(hex: 0xFFA500)
         let c2 = NSUIColor(hex: 0x4F0147)
         let c3 = NSUIColor(hex: 0x35012C)
         let c4 = NSUIColor(hex: 0x290025)

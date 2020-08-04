@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05206B1424C93CF6004DCF38 /* setSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05206B1324C93CF6004DCF38 /* setSchedule.storyboard */; };
-		05206B1624C93D08004DCF38 /* setSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05206B1524C93D08004DCF38 /* setSchedule.swift */; };
+		05206B1624C93D08004DCF38 /* SetSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05206B1524C93D08004DCF38 /* SetSchedule.swift */; };
 		3A0BD0257C72B79A662E7CA3 /* Pods_Group6MC3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F57130F85C9072CE8F9C68 /* Pods_Group6MC3.framework */; };
 		AE51BFDE24CA7EBE006AAFFA /* ClockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE51BFDC24CA7EBE006AAFFA /* ClockVC.swift */; };
 		AE51BFDF24CA7EBE006AAFFA /* LightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE51BFDD24CA7EBE006AAFFA /* LightVC.swift */; };
@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		05206B1324C93CF6004DCF38 /* setSchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = setSchedule.storyboard; sourceTree = "<group>"; };
-		05206B1524C93D08004DCF38 /* setSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setSchedule.swift; sourceTree = "<group>"; };
+		05206B1524C93D08004DCF38 /* SetSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetSchedule.swift; sourceTree = "<group>"; };
 		63F57130F85C9072CE8F9C68 /* Pods_Group6MC3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Group6MC3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE51BFDC24CA7EBE006AAFFA /* ClockVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockVC.swift; sourceTree = "<group>"; };
 		AE51BFDD24CA7EBE006AAFFA /* LightVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightVC.swift; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				AE51BFDC24CA7EBE006AAFFA /* ClockVC.swift */,
-				05206B1524C93D08004DCF38 /* setSchedule.swift */,
+				05206B1524C93D08004DCF38 /* SetSchedule.swift */,
 				AE51BFDD24CA7EBE006AAFFA /* LightVC.swift */,
 				AE51BFE024CA8FD4006AAFFA /* StatisticVC.swift */,
 				AE51C00C24CFEEEA006AAFFA /* SoundVC.swift */,
@@ -299,7 +299,7 @@
 				AEAAB69024C68EB200A47532 /* AppDelegate.swift in Sources */,
 				AE51BFDF24CA7EBE006AAFFA /* LightVC.swift in Sources */,
 				AE51BFE124CA8FD4006AAFFA /* StatisticVC.swift in Sources */,
-				05206B1624C93D08004DCF38 /* setSchedule.swift in Sources */,
+				05206B1624C93D08004DCF38 /* SetSchedule.swift in Sources */,
 				AE51BFDE24CA7EBE006AAFFA /* ClockVC.swift in Sources */,
 				AEAAB69224C68EB200A47532 /* SceneDelegate.swift in Sources */,
 				AEAAB6B624C6AAC900A47532 /* BackgroundView.swift in Sources */,

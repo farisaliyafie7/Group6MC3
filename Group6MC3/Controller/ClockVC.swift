@@ -20,6 +20,7 @@ class ClockVC: UIViewController {
     @IBOutlet weak var bedtimeLabel: UILabel!
     @IBOutlet weak var waketimeLabel: UILabel!
     
+    let set = SetSchedule()
     var timer = Timer()
     var isOrange : Bool = false
     var bedRecieved : String = ""
@@ -27,7 +28,7 @@ class ClockVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setBedWakeLabel()
         sleepScheduleOutlet.layer.cornerRadius = 5
         sleepScheduleOutlet.layer.shadowRadius = 5
         sleepScheduleOutlet.layer.shadowOffset = CGSize(width: 0, height: 4)
@@ -35,6 +36,15 @@ class ClockVC: UIViewController {
         
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector:#selector(updatePerSecond) , userInfo: nil, repeats: true)
         
+    }
+    
+    func setBedWakeLabel(){
+        if let setBed = set.defaults.string(forKey: "BedTime"){
+            bedtimeLabel.text = setBed
+        }
+        if let setWake = set.defaults.string(forKey: "WakeTime"){
+            waketimeLabel.text = setWake
+        }
     }
     
     @IBAction func sleepButtonTapped(_ sender: Any) {
@@ -67,7 +77,7 @@ class ClockVC: UIViewController {
     @objc func updatePerSecond(){
         displayClock()
         checkTime()
-        setWakeBedTime()
+//        setWakeBedTime()
     }
     
     func checkTime(){
@@ -99,16 +109,16 @@ class ClockVC: UIViewController {
             clockLabel.text = "\(hour):\(minute)"
         }
     }
-    func setWakeBedTime(){
-        if wakeRecieved == ""{
-            waketimeLabel.text = "-"
-            bedtimeLabel.text = "-"
-        }
-        else{
-            waketimeLabel.text = wakeRecieved
-            bedtimeLabel.text = bedRecieved
-        }
-    }
+//    func setWakeBedTime(){
+//        if wakeRecieved == ""{
+//            waketimeLabel.text = "-"
+//            bedtimeLabel.text = "-"
+//        }
+//        else{
+//            waketimeLabel.text = wakeRecieved
+//            bedtimeLabel.text = bedRecieved
+//        }
+//    }
     
     @IBAction func unwindToHome (_ sender:UIStoryboardSegue){
         
