@@ -11,6 +11,11 @@ import CoreData
 
 class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate{
     
+    let defaults = UserDefaults.standard
+    var sound:String?
+    var repeated:String?
+    var type:String?
+    
     let reminder = ReminderController()
     
     @IBOutlet weak var switchAlcohol: UISwitch!
@@ -41,7 +46,8 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
     override func viewDidLoad() {
         super.viewDidLoad()
         reminder.content.sound = .default
-        customTextField()
+        setReminder()
+        setTextField()
         editableSound.delegate = self
         editableRepeat.delegate = self
         editableType.delegate = self
@@ -68,7 +74,7 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
     }
     
     // clear all color and border UITextField
-    func customTextField(){
+    func setTextField(){
         editableSound.backgroundColor = UIColor.clear
         editableRepeat.backgroundColor = UIColor.clear
         editableType.backgroundColor = UIColor.clear
@@ -77,14 +83,71 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
         editableType.borderStyle = .none
         
         // default setting
-        if setAlarm.isEmpty{
-            editableSound.text = soundList[1]
-            editableRepeat.text = repeatList[0]
-            editableType.text = typeList[1]
+        if let setSound = defaults.string(forKey: "Sound"){
+            editableSound.text = setSound
         }else{
-            editableSound.text = setAlarm[0].value(forKey: "sound") as? String
-            editableRepeat.text = setAlarm[0].value(forKeyPath: "repeated") as? String
-            editableType.text = setAlarm[0].value(forKeyPath: "type") as? String
+            editableSound.text = soundList[0]
+        }
+        if let setRepeat = defaults.string(forKey: "Repeated"){
+            editableRepeat.text = setRepeat
+        }else{
+            editableRepeat.text = repeatList[0]
+        }
+        if let setType = defaults.string(forKey: "Type"){
+            editableType.text = setType
+        }else{
+            editableType.text = typeList[0]
+        }
+    }
+    
+    func setReminder(){
+        let setAlcohol = defaults.bool(forKey: "Alcohol")
+        let setEat = defaults.bool(forKey: "Eat")
+        let setCaffeine = defaults.bool(forKey: "Caffeine")
+        let setExercise = defaults.bool(forKey: "Exercise")
+        let setSugar = defaults.bool(forKey: "Sugar")
+        let setGadget = defaults.bool(forKey: "Gadget")
+        let setBed = defaults.bool(forKey: "Bed")
+        let setEncouragement = defaults.bool(forKey: "Encouragement")
+        if setAlcohol == true{
+            switchAlcohol.setOn(setAlcohol, animated: false)
+            reminder.cancelAlcoholReminder()
+            reminder.avoidAlcoholReminder()
+        }
+        if setEat == true{
+            switchEat.setOn(true, animated: false)
+            reminder.cancelEatReminder()
+            reminder.avoidEatReminder()
+        }
+        if setCaffeine == true{
+            switchCaffeine.setOn(true, animated: false)
+            reminder.cancelCaffeineReminder()
+            reminder.avoidFaffeineReminder()
+        }
+        if setExercise == true{
+            switchExercise.setOn(true, animated: false)
+            reminder.cancelExerciseReminder()
+            reminder.avoidExerciseReminder()
+        }
+        if setSugar == true{
+            switchSugar.setOn(true, animated: false)
+            reminder.cancelSugarReminder()
+            reminder.avoidSugarReminder()
+        }
+        if setGadget == true{
+            switchGadget.setOn(true, animated: false)
+            reminder.cancelGadgetReminder()
+            reminder.avoidGadgetReminder()
+        }
+        if setBed == true{
+            switchBed.setOn(true, animated: false)
+            reminder.cancelBedReminder()
+            reminder.bedTimeReminder()
+        }
+        if setEncouragement == true{
+            switchEncouragement.setOn(true, animated: false)
+            reminder.cancelEncouragementReminder()
+            reminder.encouragementReminder()
         }
     }
     
@@ -92,57 +155,73 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
     @IBAction func alcoholSwitched(_ sender: UISwitch) {
         if(switchAlcohol.isOn){
             reminder.avoidAlcoholReminder()
+            defaults.set(true, forKey: "Alcohol")
         }else{
             reminder.cancelAlcoholReminder()
+            defaults.set(false, forKey: "Alcohol")
         }
     }
     @IBAction func eatSwitched(_ sender: UISwitch) {
         if(switchEat.isOn){
             reminder.avoidEatReminder()
+            defaults.set(true, forKey: "Eat")
         }else{
             reminder.cancelEatReminder()
+            defaults.set(false, forKey: "Eat")
         }
     }
     @IBAction func caffeineSwitched(_ sender: UISwitch) {
         if(switchCaffeine.isOn){
             reminder.avoidFaffeineReminder()
+            defaults.set(true, forKey: "Caffeine")
         }else{
             reminder.cancelCaffeineReminder()
+            defaults.set(false, forKey: "Caffeine")
         }
     }
     @IBAction func exerciseSwitched(_ sender: UISwitch) {
         if(switchExercise.isOn){
             reminder.avoidExerciseReminder()
+            defaults.set(true, forKey: "Exercise")
         }else{
             reminder.cancelExerciseReminder()
+            defaults.set(false, forKey: "Exercise")
         }
     }
     @IBAction func sugarSwitched(_ sender: UISwitch) {
         if(switchSugar.isOn){
             reminder.avoidSugarReminder()
+            defaults.set(true, forKey: "Sugar")
         }else{
             reminder.cancelSugarReminder()
+            defaults.set(false, forKey: "Sugar")
         }
     }
     @IBAction func gadgetSwitched(_ sender: UISwitch) {
         if(switchGadget.isOn){
             reminder.avoidGadgetReminder()
+            defaults.set(true, forKey: "Gadget")
         }else{
             reminder.cancelGadgetReminder()
+            defaults.set(false, forKey: "Gadget")
         }
     }
     @IBAction func bedSwitched(_ sender: UISwitch) {
         if(switchBed.isOn){
             reminder.bedTimeReminder()
+            defaults.set(true, forKey: "Bed")
         }else{
             reminder.cancelBedReminder()
+            defaults.set(false, forKey: "Bed")
         }
     }
     @IBAction func encouragementSwitched(_ sender: UISwitch) {
         if(switchEncouragement.isOn){
             reminder.encouragementReminder()
+            defaults.set(true, forKey: "Encouragement")
         }else{
             reminder.cancelEncouragementReminder()
+            defaults.set(false, forKey: "Encouragement")
         }
     }
     // End: All Switch Actions
@@ -230,46 +309,18 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
     
     @objc func categoryDoneClicked() {
         currentTextField.inputView = pickerView
-        let soundToSave = currentTextField.text!
-        self.save(name: soundToSave)
+        if currentTextField == editableSound{
+            self.sound = currentTextField.text!
+            self.defaults.set(self.sound, forKey: "Sound")
+        }else if currentTextField == editableRepeat{
+            self.repeated = currentTextField.text!
+            self.defaults.set(self.repeated, forKey: "Repeated")
+        }else if currentTextField == editableType{
+            self.type = currentTextField.text!
+            self.defaults.set(self.type, forKey: "Type")
+        }
         self.view.endEditing(true)
     }
     // End: Alarm Setting
-    
-    func save(name: String) {
-      guard let appDelegate =
-        UIApplication.shared.delegate as? AppDelegate else {
-        return
-      }
-      // 1
-      let managedContext =
-        appDelegate.persistentContainer.viewContext
-      
-      // 2
-      let entity =
-        NSEntityDescription.entity(forEntityName: "Alarm",
-                                   in: managedContext)!
-      
-      let alarm = NSManagedObject(entity: entity,
-                                   insertInto: managedContext)
-      
-      // 3
-        alarm.setValue(soundLabel.text!, forKeyPath: "sound")
-        alarm.setValue(soundLabel.text!, forKeyPath: "repeated")
-        alarm.setValue(soundLabel.text!, forKeyPath: "type")
-      // 4
-      do {
-        try managedContext.save()
-        setAlarm.removeAll()
-        setAlarm.append(alarm)
-      } catch let error as NSError {
-        print("Could not save. \(error), \(error.userInfo)")
-      }
-    }
 }
 
-struct alarmModel {
-    let sound: String
-    let repeated: String
-    let type: String
-}

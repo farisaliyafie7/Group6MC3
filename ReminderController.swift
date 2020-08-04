@@ -100,7 +100,14 @@ class ReminderController{
         }
     }
     func encouragementReminder(){
-        
+        content.title = "Encouragement"
+        content.body = "Test"
+        let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: Date().addingTimeInterval(40))
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        let request = UNNotificationRequest(identifier: uuidReminder["bed"]!, content: content, trigger: trigger)
+        center.add(request) { (error) in
+            //Check the parameter and handle any errors
+        }
     }
     // End: add notification
     
