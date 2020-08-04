@@ -110,7 +110,7 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
         let setBed = defaults.bool(forKey: "Bed")
         let setEncouragement = defaults.bool(forKey: "Encouragement")
         if setAlcohol == true{
-            switchAlcohol.setOn(setAlcohol, animated: false)
+            switchAlcohol.setOn(true, animated: false)
             reminder.cancelAlcoholReminder()
             reminder.avoidAlcoholReminder()
         }
