@@ -34,6 +34,7 @@ class ClockVC: UIViewController {
     var timeToSleep : Bool = false
     var tappedSleep : Bool = false
     var tappedWake : Bool = false
+    var successRate : Bool = false
     
     var set = setSchedule()
     
@@ -59,7 +60,6 @@ class ClockVC: UIViewController {
     }
     
     @IBAction func sleepButtonTapped(_ sender: Any) {
-        
         if timeToSleep == false && isOrange == true{
             sleepButtonOutlet.setImage(#imageLiteral(resourceName: "Sleep Button"), for: .normal)
             clockLabel.textColor = #colorLiteral(red: 1, green: 0.5444618464, blue: 0, alpha: 1)
@@ -71,6 +71,7 @@ class ClockVC: UIViewController {
 //            sleepTime = clockLabel.text!
             
         }
+
         else if timeToSleep == true && isOrange == true{
             sleepButtonOutlet.setImage(#imageLiteral(resourceName: "Sleep Button"), for: .normal)
             clockLabel.textColor = #colorLiteral(red: 1, green: 0.5444618464, blue: 0, alpha: 1)
@@ -103,7 +104,6 @@ class ClockVC: UIViewController {
             smallLabel.text = "Tap when you wake up"
             timeToSleep = false
             tappedSleep = false
-            
         }
         else if clockLabel.text == bedtimeLabel.text && tappedSleep == false {
             sleepButtonOutlet.setImage(#imageLiteral(resourceName: "Wake Button"), for: .normal)
@@ -114,6 +114,7 @@ class ClockVC: UIViewController {
             timeToSleep = true
             tappedWake = false
         }
+        
     }
     
     func displayClock(){

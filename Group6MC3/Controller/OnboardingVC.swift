@@ -13,16 +13,14 @@ class OnboardingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
-    override func viewDidLayoutSubviews() {
-        if Core.shared.isNewUser(){
-            
-        }
+    @IBAction func getStarted(_ sender: Any) {
+        Core.shared.setIsNotNewUser()
+        dismiss(animated: true, completion: nil)
     }
     
-
 }
 
 class Core {
