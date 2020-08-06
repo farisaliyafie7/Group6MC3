@@ -5,6 +5,7 @@
 //  Created by Glendito Jeremiah Palendeng on 26/07/20.
 //  Copyright © 2020 Faris Ali Yafie. All rights reserved.
 //
+
 import UIKit
 import AVFoundation
 
@@ -31,6 +32,8 @@ class SoundVC: UIViewController {
     @IBOutlet weak var thunderView: UIImageView!
     @IBOutlet weak var windView: UIImageView!
     
+    var timer = Timer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setFireSound()
@@ -47,7 +50,7 @@ class SoundVC: UIViewController {
         thunderView.addShadow()
         waveView.addShadow()
         
-        
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector:#selector(update) , userInfo: nil, repeats: true)
         // Do any additional setup after loading the view.
     }
     
@@ -126,7 +129,7 @@ class SoundVC: UIViewController {
         } catch {
             print("couldn't load file")
         }
-        forestSound?.numberOfLoops = -1
+        forestSound?.numberOfLoops = 24
     }
     func setRainSound(){
            let path = Bundle.main.path(forResource: "City_Rain.mp3", ofType:nil)!
@@ -136,7 +139,7 @@ class SoundVC: UIViewController {
            } catch {
                print("couldn't load file")
            }
-        rainSound?.numberOfLoops = -1
+        rainSound?.numberOfLoops = 12
        }
     func setWaveSound(){
            let path = Bundle.main.path(forResource: "ocean_waves.mp3", ofType:nil)!
@@ -146,7 +149,7 @@ class SoundVC: UIViewController {
            } catch {
                print("couldn't load file")
            }
-        waveSound.numberOfLoops = -1
+        waveSound.numberOfLoops = 25
        }
     func setFireSound(){
            let path = Bundle.main.path(forResource: "camp_fire.mp3", ofType:nil)!
@@ -156,7 +159,7 @@ class SoundVC: UIViewController {
            } catch {
                print("couldn't load file")
            }
-        fireSound?.numberOfLoops = -1
+        fireSound?.numberOfLoops = 17
        }
     func setThunderSound(){
            let path = Bundle.main.path(forResource: "nature_rain_thunderstorm.mp3", ofType:nil)!
@@ -166,7 +169,7 @@ class SoundVC: UIViewController {
            } catch {
                print("couldn't load file")
            }
-        thunderSound?.numberOfLoops = -1
+        thunderSound?.numberOfLoops = 33
        }
     func setWindSound(){
            let path = Bundle.main.path(forResource: "nature_wind.mp3", ofType:nil)!
@@ -176,16 +179,29 @@ class SoundVC: UIViewController {
            } catch {
                print("couldn't load file")
            }
-        windSound?.numberOfLoops = -1
+        windSound?.numberOfLoops = 24
        }
-    /*
-    // MARK: - Navigation
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @objc func update(){
+        if forestSound?.isPlaying == false {
+            forestPlayOutlet.setBackgroundImage(UIImage(systemName: "play.circle"), for: .normal)
+        }
+        else if rainSound?.isPlaying == false{
+            rainPlayOutlet.setBackgroundImage(UIImage(systemName: "play.circle"), for: .normal)
+        }
+        else if waveSound?.isPlaying == false{
+            wavePlayOutlet.setBackgroundImage(UIImage(systemName: "play.circle"), for: .normal)
+        }
+        else if fireSound?.isPlaying == false{
+            firePlayOutlet.setBackgroundImage(UIImage(systemName: "play.circle"), for: .normal)
+        }
+        else if thunderSound?.isPlaying == false{
+            thunderPlayOutlet.setBackgroundImage(UIImage(systemName: "play.circle"), for: .normal)
+        }
+        else if windSound?.isPlaying == false{
+            windPlayOutlet.setBackgroundImage(UIImage(systemName: "play.circle"), for: .normal)
+        }
     }
-    */
 
 }
 
