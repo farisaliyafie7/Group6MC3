@@ -43,6 +43,10 @@ class SettingVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
     
     var setAlarm = [NSManagedObject]()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return UIStatusBarStyle.lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         reminder.content.sound = .default

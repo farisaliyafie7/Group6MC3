@@ -34,6 +34,10 @@ class SoundVC: UIViewController {
     
     var timer = Timer()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return UIStatusBarStyle.lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setFireSound()

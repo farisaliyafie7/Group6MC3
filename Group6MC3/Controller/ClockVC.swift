@@ -26,6 +26,10 @@ class ClockVC: UIViewController {
     var bedRecieved : String = ""
     var wakeRecieved : String = ""
     
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return UIStatusBarStyle.lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setBedWakeLabel()

@@ -52,6 +52,10 @@ class SetSchedule: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
         }
     }
 
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return UIStatusBarStyle.lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
