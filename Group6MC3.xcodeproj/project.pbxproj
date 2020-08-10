@@ -20,6 +20,27 @@
 		AE51C00A24CFEC36006AAFFA /* Nature_Forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE51C00424CFEC36006AAFFA /* Nature_Forest.mp3 */; };
 		AE51C00B24CFEC36006AAFFA /* camp_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE51C00524CFEC36006AAFFA /* camp_fire.mp3 */; };
 		AE51C00D24CFEEEA006AAFFA /* SoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE51C00C24CFEEEA006AAFFA /* SoundVC.swift */; };
+		AE6024EA24E1413F003AAF73 /* PHSKnownBridgeAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6024D024E1413E003AAF73 /* PHSKnownBridgeAdditions.swift */; };
+		AE6024EB24E1413F003AAF73 /* SegueCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6024D224E1413E003AAF73 /* SegueCoordinator.swift */; };
+		AE6024EC24E1413F003AAF73 /* PHBridgeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6024D424E1413E003AAF73 /* PHBridgeController.swift */; };
+		AE6024ED24E1413F003AAF73 /* BridgeDiscoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6024D624E1413E003AAF73 /* BridgeDiscoveryController.swift */; };
+		AE6024EE24E1413F003AAF73 /* PHBridgeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6024D724E1413E003AAF73 /* PHBridgeSelectionViewController.swift */; };
+		AE6024EF24E1413F003AAF73 /* PHBridgeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6024D824E1413E003AAF73 /* PHBridgeInfo.swift */; };
+		AE6024F024E1413F003AAF73 /* PHBridgePushLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6024D924E1413E003AAF73 /* PHBridgePushLinkViewController.swift */; };
+		AE6024F124E1413F003AAF73 /* AutomaticNibLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6024DB24E1413E003AAF73 /* AutomaticNibLoading.swift */; };
+		AE6024F224E1413F003AAF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6024DC24E1413E003AAF73 /* Main.storyboard */; };
+		AE6024F324E1413F003AAF73 /* PHLightControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6024DD24E1413E003AAF73 /* PHLightControlViewController.swift */; };
+		AE6024F424E1413F003AAF73 /* ActivityIndicatorOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6024E024E1413E003AAF73 /* ActivityIndicatorOverlayView.swift */; };
+		AE6024F524E1413F003AAF73 /* ActivityIndicatorOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE6024E124E1413E003AAF73 /* ActivityIndicatorOverlayView.xib */; };
+		AE6024F624E1413F003AAF73 /* ActivityStatusIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6024E324E1413E003AAF73 /* ActivityStatusIndicator.swift */; };
+		AE6024F724E1413F003AAF73 /* NavigableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6024E424E1413E003AAF73 /* NavigableController.swift */; };
+		AE6024F824E1413F003AAF73 /* ActivityDisplaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6024E524E1413E003AAF73 /* ActivityDisplaying.swift */; };
+		AE6024F924E1413F003AAF73 /* PushLinkPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6024E624E1413E003AAF73 /* PushLinkPresenting.swift */; };
+		AE6024FA24E1413F003AAF73 /* NavigationHelping.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6024E724E1413E003AAF73 /* NavigationHelping.swift */; };
+		AE6024FB24E1413F003AAF73 /* AlertPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6024E824E1413E003AAF73 /* AlertPresenting.swift */; };
+		AE6024FC24E1413F003AAF73 /* PHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6024E924E1413E003AAF73 /* PHNavigationController.swift */; };
+		AE6024FE24E143E8003AAF73 /* HueSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6024FD24E143E8003AAF73 /* HueSDK.framework */; };
+		AE6024FF24E143E8003AAF73 /* HueSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE6024FD24E143E8003AAF73 /* HueSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AE6A915824C919A20097A9AF /* TabNav.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915724C919A20097A9AF /* TabNav.storyboard */; };
 		AE6A915A24C923260097A9AF /* Clock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915924C923260097A9AF /* Clock.storyboard */; };
 		AE6A915C24C9234B0097A9AF /* Light.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A915B24C9234B0097A9AF /* Light.storyboard */; };
@@ -36,6 +57,20 @@
 		AEAAB6B624C6AAC900A47532 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAB6B524C6AAC900A47532 /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AE60249D24E13B16003AAF73 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE6024FF24E143E8003AAF73 /* HueSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		05206B1324C93CF6004DCF38 /* setSchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = setSchedule.storyboard; sourceTree = "<group>"; };
 		05206B1524C93D08004DCF38 /* SetSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetSchedule.swift; sourceTree = "<group>"; };
@@ -50,6 +85,27 @@
 		AE51C00424CFEC36006AAFFA /* Nature_Forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Nature_Forest.mp3; path = "../../../Downloads/Sound MC3/Nature_Forest.mp3"; sourceTree = "<group>"; };
 		AE51C00524CFEC36006AAFFA /* camp_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = camp_fire.mp3; path = "../../../Downloads/Sound MC3/camp_fire.mp3"; sourceTree = "<group>"; };
 		AE51C00C24CFEEEA006AAFFA /* SoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundVC.swift; sourceTree = "<group>"; };
+		AE6024D024E1413E003AAF73 /* PHSKnownBridgeAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHSKnownBridgeAdditions.swift; sourceTree = "<group>"; };
+		AE6024D224E1413E003AAF73 /* SegueCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueCoordinator.swift; sourceTree = "<group>"; };
+		AE6024D424E1413E003AAF73 /* PHBridgeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHBridgeController.swift; sourceTree = "<group>"; };
+		AE6024D624E1413E003AAF73 /* BridgeDiscoveryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeDiscoveryController.swift; sourceTree = "<group>"; };
+		AE6024D724E1413E003AAF73 /* PHBridgeSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHBridgeSelectionViewController.swift; sourceTree = "<group>"; };
+		AE6024D824E1413E003AAF73 /* PHBridgeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHBridgeInfo.swift; sourceTree = "<group>"; };
+		AE6024D924E1413E003AAF73 /* PHBridgePushLinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHBridgePushLinkViewController.swift; sourceTree = "<group>"; };
+		AE6024DB24E1413E003AAF73 /* AutomaticNibLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutomaticNibLoading.swift; sourceTree = "<group>"; };
+		AE6024DC24E1413E003AAF73 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AE6024DD24E1413E003AAF73 /* PHLightControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHLightControlViewController.swift; sourceTree = "<group>"; };
+		AE6024DE24E1413E003AAF73 /* HueQuickStartAppSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HueQuickStartAppSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		AE6024E024E1413E003AAF73 /* ActivityIndicatorOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorOverlayView.swift; sourceTree = "<group>"; };
+		AE6024E124E1413E003AAF73 /* ActivityIndicatorOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityIndicatorOverlayView.xib; sourceTree = "<group>"; };
+		AE6024E324E1413E003AAF73 /* ActivityStatusIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityStatusIndicator.swift; sourceTree = "<group>"; };
+		AE6024E424E1413E003AAF73 /* NavigableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigableController.swift; sourceTree = "<group>"; };
+		AE6024E524E1413E003AAF73 /* ActivityDisplaying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDisplaying.swift; sourceTree = "<group>"; };
+		AE6024E624E1413E003AAF73 /* PushLinkPresenting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushLinkPresenting.swift; sourceTree = "<group>"; };
+		AE6024E724E1413E003AAF73 /* NavigationHelping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationHelping.swift; sourceTree = "<group>"; };
+		AE6024E824E1413E003AAF73 /* AlertPresenting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPresenting.swift; sourceTree = "<group>"; };
+		AE6024E924E1413E003AAF73 /* PHNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHNavigationController.swift; sourceTree = "<group>"; };
+		AE6024FD24E143E8003AAF73 /* HueSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HueSDK.framework; path = PhilipsHue/HueSDK.framework; sourceTree = "<group>"; };
 		AE6A915724C919A20097A9AF /* TabNav.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabNav.storyboard; sourceTree = "<group>"; };
 		AE6A915924C923260097A9AF /* Clock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Clock.storyboard; sourceTree = "<group>"; };
 		AE6A915B24C9234B0097A9AF /* Light.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Light.storyboard; sourceTree = "<group>"; };
@@ -75,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6024FE24E143E8003AAF73 /* HueSDK.framework in Frameworks */,
 				3A0BD0257C72B79A662E7CA3 /* Pods_Group6MC3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +139,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE6024CE24E1413E003AAF73 /* Light */ = {
+			isa = PBXGroup;
+			children = (
+				AE6024CF24E1413E003AAF73 /* Misc */,
+				AE6024D124E1413E003AAF73 /* Coordinators */,
+				AE6024D324E1413E003AAF73 /* Bridge */,
+				AE6024DA24E1413E003AAF73 /* Utils */,
+				AE6024DC24E1413E003AAF73 /* Main.storyboard */,
+				AE6024DD24E1413E003AAF73 /* PHLightControlViewController.swift */,
+				AE6024DE24E1413E003AAF73 /* HueQuickStartAppSwift-Bridging-Header.h */,
+				AE6024DF24E1413E003AAF73 /* Views */,
+				AE6024E224E1413E003AAF73 /* Protocols */,
+				AE6024E924E1413E003AAF73 /* PHNavigationController.swift */,
+			);
+			path = Light;
+			sourceTree = "<group>";
+		};
+		AE6024CF24E1413E003AAF73 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				AE6024D024E1413E003AAF73 /* PHSKnownBridgeAdditions.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		AE6024D124E1413E003AAF73 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				AE6024D224E1413E003AAF73 /* SegueCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		AE6024D324E1413E003AAF73 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				AE6024D424E1413E003AAF73 /* PHBridgeController.swift */,
+				AE6024D524E1413E003AAF73 /* Discovery */,
+				AE6024D824E1413E003AAF73 /* PHBridgeInfo.swift */,
+				AE6024D924E1413E003AAF73 /* PHBridgePushLinkViewController.swift */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		AE6024D524E1413E003AAF73 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				AE6024D624E1413E003AAF73 /* BridgeDiscoveryController.swift */,
+				AE6024D724E1413E003AAF73 /* PHBridgeSelectionViewController.swift */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		AE6024DA24E1413E003AAF73 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AE6024DB24E1413E003AAF73 /* AutomaticNibLoading.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AE6024DF24E1413E003AAF73 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE6024E024E1413E003AAF73 /* ActivityIndicatorOverlayView.swift */,
+				AE6024E124E1413E003AAF73 /* ActivityIndicatorOverlayView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE6024E224E1413E003AAF73 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AE6024E324E1413E003AAF73 /* ActivityStatusIndicator.swift */,
+				AE6024E424E1413E003AAF73 /* NavigableController.swift */,
+				AE6024E524E1413E003AAF73 /* ActivityDisplaying.swift */,
+				AE6024E624E1413E003AAF73 /* PushLinkPresenting.swift */,
+				AE6024E724E1413E003AAF73 /* NavigationHelping.swift */,
+				AE6024E824E1413E003AAF73 /* AlertPresenting.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		AEAAB68324C68EB200A47532 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +243,7 @@
 		AEAAB68E24C68EB200A47532 /* Group6MC3 */ = {
 			isa = PBXGroup;
 			children = (
+				AE6024CE24E1413E003AAF73 /* Light */,
 				AEAAB68F24C68EB200A47532 /* AppDelegate.swift */,
 				AEAAB69124C68EB200A47532 /* SceneDelegate.swift */,
 				AEAAB6B424C6AA1400A47532 /* Controller */,
@@ -162,6 +303,7 @@
 		CAB484CDBA5F7F8B3FDCD6A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE6024FD24E143E8003AAF73 /* HueSDK.framework */,
 				63F57130F85C9072CE8F9C68 /* Pods_Group6MC3.framework */,
 			);
 			name = Frameworks;
@@ -179,6 +321,7 @@
 				AEAAB68924C68EB200A47532 /* Frameworks */,
 				AEAAB68A24C68EB200A47532 /* Resources */,
 				349C80F7ED8B2BD73BBC9B4D /* [CP] Embed Pods Frameworks */,
+				AE60249D24E13B16003AAF73 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,6 +381,8 @@
 				AEAAB69724C68EB200A47532 /* Setting.storyboard in Resources */,
 				AE51C00724CFEC36006AAFFA /* City_Rain.mp3 in Resources */,
 				05206B1424C93CF6004DCF38 /* setSchedule.storyboard in Resources */,
+				AE6024F224E1413F003AAF73 /* Main.storyboard in Resources */,
+				AE6024F524E1413F003AAF73 /* ActivityIndicatorOverlayView.xib in Resources */,
 				AE51C00824CFEC36006AAFFA /* ocean_waves.mp3 in Resources */,
 				AE6A915A24C923260097A9AF /* Clock.storyboard in Resources */,
 				AE51C00624CFEC36006AAFFA /* nature_rain_thunderstorm.mp3 in Resources */,
@@ -294,17 +439,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6024EA24E1413F003AAF73 /* PHSKnownBridgeAdditions.swift in Sources */,
+				AE6024FA24E1413F003AAF73 /* NavigationHelping.swift in Sources */,
+				AE6024F024E1413F003AAF73 /* PHBridgePushLinkViewController.swift in Sources */,
 				AEAAB69A24C68EB200A47532 /* Group6MC3.xcdatamodeld in Sources */,
+				AE6024EB24E1413F003AAF73 /* SegueCoordinator.swift in Sources */,
+				AE6024F824E1413F003AAF73 /* ActivityDisplaying.swift in Sources */,
 				AEAAB69424C68EB200A47532 /* SettingVC.swift in Sources */,
+				AE6024EC24E1413F003AAF73 /* PHBridgeController.swift in Sources */,
 				AEAAB69024C68EB200A47532 /* AppDelegate.swift in Sources */,
 				AE51BFDF24CA7EBE006AAFFA /* LightVC.swift in Sources */,
+				AE6024F124E1413F003AAF73 /* AutomaticNibLoading.swift in Sources */,
+				AE6024F324E1413F003AAF73 /* PHLightControlViewController.swift in Sources */,
+				AE6024F924E1413F003AAF73 /* PushLinkPresenting.swift in Sources */,
+				AE6024F624E1413F003AAF73 /* ActivityStatusIndicator.swift in Sources */,
+				AE6024F424E1413F003AAF73 /* ActivityIndicatorOverlayView.swift in Sources */,
 				AE51BFE124CA8FD4006AAFFA /* StatisticVC.swift in Sources */,
+				AE6024EF24E1413F003AAF73 /* PHBridgeInfo.swift in Sources */,
+				AE6024ED24E1413F003AAF73 /* BridgeDiscoveryController.swift in Sources */,
 				05206B1624C93D08004DCF38 /* SetSchedule.swift in Sources */,
+				AE6024EE24E1413F003AAF73 /* PHBridgeSelectionViewController.swift in Sources */,
+				AE6024FB24E1413F003AAF73 /* AlertPresenting.swift in Sources */,
 				AE51BFDE24CA7EBE006AAFFA /* ClockVC.swift in Sources */,
 				AEAAB69224C68EB200A47532 /* SceneDelegate.swift in Sources */,
 				AEAAB6B624C6AAC900A47532 /* BackgroundView.swift in Sources */,
 				AE51C00D24CFEEEA006AAFFA /* SoundVC.swift in Sources */,
 				AE6A916824C9388C0097A9AF /* ReminderController.swift in Sources */,
+				AE6024F724E1413F003AAF73 /* NavigableController.swift in Sources */,
+				AE6024FC24E1413F003AAF73 /* PHNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +613,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LU7959C5GC;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Charts\"",
+					/Users/farisaliyafie/Documents/Swift/Latihan/Group6MC3/PhilipsHue,
+					"$(PROJECT_DIR)/PhilipsHue",
+				);
 				INFOPLIST_FILE = Group6MC3/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -459,6 +628,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = AppleAcademy.Group6MC3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/farisaliyafie/Documents/Swift/Latihan/Group6MC3/Group6MC3/Light/HueQuickStartAppSwift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -471,6 +641,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LU7959C5GC;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Charts\"",
+					/Users/farisaliyafie/Documents/Swift/Latihan/Group6MC3/PhilipsHue,
+					"$(PROJECT_DIR)/PhilipsHue",
+				);
 				INFOPLIST_FILE = Group6MC3/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -479,6 +656,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = AppleAcademy.Group6MC3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/farisaliyafie/Documents/Swift/Latihan/Group6MC3/Group6MC3/Light/HueQuickStartAppSwift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

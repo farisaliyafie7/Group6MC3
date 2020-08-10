@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="-1171" y="301"/>
         </scene>
-        <!--light-->
+        <!--main-->
         <scene sceneID="Dmv-mD-HJ8">
             <objects>
-                <viewControllerPlaceholder storyboardName="Light" referencedIdentifier="light" id="1im-9v-cQY" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="main" id="1im-9v-cQY" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Light" image="lightbulb.fill" catalog="system" id="hPu-U4-xG3"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibB-ZV-duE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

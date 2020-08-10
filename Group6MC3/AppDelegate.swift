@@ -22,7 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                 print("User given permissions for local notifications")
             }
         }
+        configureSDK()
         return true
+    }
+    
+    func configureSDK() {
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        
+        PHSPersistence.setStorageLocation(documentsPath, andDeviceId: "001122334455")
+        PHSLog.setConsoleLogLevel(PHSLogLevel.debug)
     }
     
     //MARK:- UNUSerNotificationDelegates
