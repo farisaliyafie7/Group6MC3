@@ -10,6 +10,8 @@ import UIKit
 
 class OnboardingVC: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,19 +20,14 @@ class OnboardingVC: UIViewController {
     
     @IBAction func getStarted(_ sender: Any) {
         Core.shared.setIsNotNewUser()
-        dismiss(animated: true, completion: nil)
+        
+        let storyboard = UIStoryboard(name: "TabNav", bundle: nil)
+        let mainVC = storyboard.instantiateViewController(withIdentifier: "tabnav") as! UITabBarController
+        
+        self.present(mainVC,animated: true,completion: nil)
+        
     }
     
 }
 
-class Core {
-    static let shared = Core()
-    
-    func isNewUser() -> Bool{
-        return !UserDefaults.standard.bool(forKey: "isNewUser")
-    }
-    
-    func setIsNotNewUser(){
-        UserDefaults.standard.set(true, forKey: "isNewUser")
-    }
-}
+

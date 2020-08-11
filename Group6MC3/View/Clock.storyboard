@@ -108,6 +108,7 @@
                         <outlet property="sleepScheduleOutlet" destination="Pap-Ur-bDI" id="iNf-oC-gl2"/>
                         <outlet property="smallLabel" destination="9rT-4H-ovn" id="vL9-pD-OaU"/>
                         <outlet property="waketimeLabel" destination="QJN-vW-9ne" id="6LK-uD-dvd"/>
+                        <segue destination="cwU-ch-zjn" kind="custom" id="H8M-4X-rA5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZMX-pi-YsC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -121,6 +122,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Zo-Fa-oZa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="798" y="-373"/>
+        </scene>
+        <!--pageCtrl-->
+        <scene sceneID="NDv-Vk-JDs">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Onboarding" storyboardName="Onboarding" referencedIdentifier="pageCtrl" id="cwU-ch-zjn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VrV-X4-5mv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="686" y="-522"/>
         </scene>
     </scenes>
     <resources>

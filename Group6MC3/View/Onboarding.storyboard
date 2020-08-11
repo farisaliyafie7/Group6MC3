@@ -10,15 +10,15 @@
         <!--Page Ctrl OnboardingVC-->
         <scene sceneID="9ff-cF-d19">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="TxR-01-Hyq" customClass="PageCtrlOnboardingVC" customModule="Group6MC3" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="pageCtrl" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="TxR-01-Hyq" customClass="PageCtrlOnboardingVC" customModule="Group6MC3" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cz3-0G-GWv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1137" y="126"/>
         </scene>
-        <!--View Controller-->
+        <!--Onboard1VC-->
         <scene sceneID="zNZ-zd-eaJ">
             <objects>
-                <viewController storyboardIdentifier="onboard1" id="Pcc-TN-omJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onboard1" id="Pcc-TN-omJ" customClass="Onboard1VC" customModule="Group6MC3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iDt-JX-ogo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

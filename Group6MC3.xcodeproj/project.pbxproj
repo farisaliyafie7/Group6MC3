@@ -14,6 +14,8 @@
 		6566FF9E24D13E2C00D29913 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6566FF9D24D13E2C00D29913 /* OnboardingVC.swift */; };
 		6566FFA024D13F9100D29913 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6566FF9F24D13F9100D29913 /* Onboarding.storyboard */; };
 		6566FFA424D72DB900D29913 /* PageCtrlOnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6566FFA324D72DB900D29913 /* PageCtrlOnboardingVC.swift */; };
+		6566FFAB24E10E7B00D29913 /* Annoying_Alarm2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6566FFAA24E10E7B00D29913 /* Annoying_Alarm2.mp3 */; };
+		6566FFAD24E10E9000D29913 /* Relaxing_Alarm2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6566FFAC24E10E9000D29913 /* Relaxing_Alarm2.mp3 */; };
 		65A6802124CDAD1400A3C4A1 /* Nature_Forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65A6801B24CDAD1300A3C4A1 /* Nature_Forest.mp3 */; };
 		65A6802224CDAD1400A3C4A1 /* City_Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65A6801C24CDAD1300A3C4A1 /* City_Rain.mp3 */; };
 		65A6802324CDAD1400A3C4A1 /* camp_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65A6801D24CDAD1300A3C4A1 /* camp_fire.mp3 */; };
@@ -47,6 +49,8 @@
 		6566FF9D24D13E2C00D29913 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		6566FF9F24D13F9100D29913 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		6566FFA324D72DB900D29913 /* PageCtrlOnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCtrlOnboardingVC.swift; sourceTree = "<group>"; };
+		6566FFAA24E10E7B00D29913 /* Annoying_Alarm2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Annoying_Alarm2.mp3; path = "../../../Downloads/ALARM SOUND MC3/Annoying_Alarm2.mp3"; sourceTree = "<group>"; };
+		6566FFAC24E10E9000D29913 /* Relaxing_Alarm2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Relaxing_Alarm2.mp3; path = "../../../Downloads/ALARM SOUND MC3/Relaxing_Alarm2.mp3"; sourceTree = "<group>"; };
 		65A6801B24CDAD1300A3C4A1 /* Nature_Forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Nature_Forest.mp3; path = "../../../Downloads/Sound MC3/Nature_Forest.mp3"; sourceTree = "<group>"; };
 		65A6801C24CDAD1300A3C4A1 /* City_Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = City_Rain.mp3; path = "../../../Downloads/Sound MC3/City_Rain.mp3"; sourceTree = "<group>"; };
 		65A6801D24CDAD1300A3C4A1 /* camp_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = camp_fire.mp3; path = "../../../Downloads/Sound MC3/camp_fire.mp3"; sourceTree = "<group>"; };
@@ -94,6 +98,13 @@
 			path = setSchedulePage;
 			sourceTree = "<group>";
 		};
+		6566FFA524E1017300D29913 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		AEAAB68324C68EB200A47532 = {
 			isa = PBXGroup;
 			children = (
@@ -113,12 +124,15 @@
 		AEAAB68E24C68EB200A47532 /* Group6MC3 */ = {
 			isa = PBXGroup;
 			children = (
+				6566FFA524E1017300D29913 /* New Group */,
 				05206B1024C93CAC004DCF38 /* setSchedulePage */,
 				AEAAB68F24C68EB200A47532 /* AppDelegate.swift */,
 				AEAAB69124C68EB200A47532 /* SceneDelegate.swift */,
 				AEAAB6B424C6AA1400A47532 /* Controller */,
 				AEAAB6B324C6A9FB00A47532 /* View */,
 				AEAAB69B24C68EB400A47532 /* Assets.xcassets */,
+				6566FFAC24E10E9000D29913 /* Relaxing_Alarm2.mp3 */,
+				6566FFAA24E10E7B00D29913 /* Annoying_Alarm2.mp3 */,
 				65A6801D24CDAD1300A3C4A1 /* camp_fire.mp3 */,
 				65A6801C24CDAD1300A3C4A1 /* City_Rain.mp3 */,
 				65A6801B24CDAD1300A3C4A1 /* Nature_Forest.mp3 */,
@@ -221,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6566FFAD24E10E9000D29913 /* Relaxing_Alarm2.mp3 in Resources */,
 				AE6A916024C923AF0097A9AF /* Sound.storyboard in Resources */,
 				65A6802324CDAD1400A3C4A1 /* camp_fire.mp3 in Resources */,
 				AE6A915824C919A20097A9AF /* TabNav.storyboard in Resources */,
@@ -233,6 +248,7 @@
 				65A6802424CDAD1400A3C4A1 /* ocean_waves.mp3 in Resources */,
 				6566FFA024D13F9100D29913 /* Onboarding.storyboard in Resources */,
 				AEAAB69724C68EB200A47532 /* Setting.storyboard in Resources */,
+				6566FFAB24E10E7B00D29913 /* Annoying_Alarm2.mp3 in Resources */,
 				05206B1424C93CF6004DCF38 /* setSchedule.storyboard in Resources */,
 				AE6A915A24C923260097A9AF /* Clock.storyboard in Resources */,
 				65A6802624CDAD1400A3C4A1 /* nature_wind.mp3 in Resources */,

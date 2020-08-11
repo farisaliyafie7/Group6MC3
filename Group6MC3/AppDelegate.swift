@@ -9,11 +9,35 @@
 import UIKit
 import CoreData
 import UserNotifications
+import Foundation
+import AudioToolbox
+import AVFoundation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate{
 
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        
+        let launchedBefore = UserDefaults.standard.bool(forKey: "hasLaunched")
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let launcedStoryboard = UIStoryboard(name: "Onboarding", bundle: nil)
+        let mainStoryboard = UIStoryboard(name: "TabNav", bundle: nil)
+        
+        var vc : UIViewController
+        
+        if launchedBefore{
+            vc = mainStoryboard.instantiateInitialViewController()!
+        }else{
+            vc = launcedStoryboard.instantiateViewController(withIdentifier: "pageCtrl")
+        }
+        UserDefaults.standard.set(true, forKey: "hasLaunched")
+        
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
+        
         // Override point for customization after application launch.
         UNUserNotificationCenter.current().delegate = self
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
@@ -23,6 +47,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         }
         return true
     }
+       
+        
+        
     
     //MARK:- UNUSerNotificationDelegates
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
